@@ -29,19 +29,19 @@ export default class NavigationMenu extends Component {
                     <li>
                         work
                     </li>
-                    <li>
+                    <li className="nested-link">
                         <Link to="/work/credit-karma">credit karma</Link>
                     </li>
-                    <li>
+                    <li className="nested-link">
                         <Link to="/work/granicus">granicus</Link>
                     </li>
                     <li>
                         play
                     </li>
-                    <li>
+                    <li className="nested-link">
                         <Link to="/play/orthofloat">orthofloat</Link>
                     </li>
-                    <li>
+                    <li className="nested-link">
                         <Link to="/play/trendtrend">trendtrend</Link>
                     </li>
                     <li>
