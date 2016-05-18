@@ -26,4 +26,9 @@
             margin-bottom: 0;
         }
     }
+    .navigation-links {
+        margin: ($base-unit * 2) 0 0;
+        padding: ($base-unit * 2) $base-unit 0;
+        list-style: none;
+    }
 }
