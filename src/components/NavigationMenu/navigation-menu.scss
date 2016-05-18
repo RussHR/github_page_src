@@ -1,8 +1,29 @@
+@import '../../styles/variables';
+
 .navigation-menu {
     position: relative;
     z-index: 1;
     width: 100%;
+    padding: $base-unit 0 ($base-unit * 2);
     background-color: rgba(255, 255, 255, 0.9);
     border-bottom: 1px solid black;
     font-family: "Macula Solid", "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+
+    .navigation-my-name {
+        margin-bottom: $base-unit;
+        text-align: center;
+    }
+    .navigation-menu-toggle {
+        cursor: pointer;
+    }
+    .hamburger-line {
+        height: $base-unit / 2;
+        width: $base-unit * 3.5;
+        background-color: black;
+        margin: 0 auto ($base-unit / 2);
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
 }
