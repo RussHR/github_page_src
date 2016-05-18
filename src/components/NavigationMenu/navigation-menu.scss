@@ -4,10 +4,17 @@
     position: relative;
     z-index: 1;
     width: 100%;
-    padding: $base-unit 0 ($base-unit * 2);
+    padding: $base-unit 0 0;
     background-color: rgba(255, 255, 255, 0.9);
-    border-bottom: 1px solid black;
     font-family: "Macula Solid", "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+
+    &.is-open {
+        border-bottom: 1px solid black;
+
+        .navigation-links {
+            max-height: 350px;
+        }
+    }
 
     .navigation-my-name {
         margin-bottom: $base-unit;
@@ -27,11 +34,14 @@
         }
     }
     .navigation-links {
+        max-height: 0;
+        overflow: hidden;
         margin: ($base-unit * 2) 0 0;
-        padding: ($base-unit * 2) $base-unit 0;
+        padding: 0 $base-unit;
         list-style: none;
-        border-top: 1px solid black;
         font-size: 1.5rem;
+        transition: max-height 0.8s;
+        border-top: 1px solid black;
 
         > ul {
             margin: $base-unit 0;

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router';
+import classNames from 'classnames';
 
 import './navigation-menu.scss';
 
@@ -14,8 +15,9 @@ export default class NavigationMenu extends Component {
     }
 
     render() {
+        const navMenuClass = classNames('navigation-menu', { 'is-open': this.state.isOpen });
         return (
-            <div className="navigation-menu">
+            <div className={navMenuClass}>
                 <h1 className="navigation-my-name">russ rinzler</h1>
                 <div className="navigation-menu-toggle" onClick={() => this.toggleMenu()}>
                     <div className="hamburger-line" />
