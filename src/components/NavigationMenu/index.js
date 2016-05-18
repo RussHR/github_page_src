@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router';
 import classNames from 'classnames';
+import velocity from 'velocity-animate';
 
 import './navigation-menu.scss';
 
@@ -11,7 +12,13 @@ export default class NavigationMenu extends Component {
     }
 
     toggleMenu() {
-        this.setState({ isOpen: !this.state.isOpen });
+        const { isOpen } = this.state;
+        this.setState({ isOpen: !isOpen }, () => {
+            velocity(this.navLinksEl, isOpen ? 'slideUp' : 'slideDown', {
+                duration: 500,
+                easing: 500
+              });
+        });
     }
 
     render() {
@@ -24,7 +31,7 @@ export default class NavigationMenu extends Component {
                     <div className="hamburger-line" />
                     <div className="hamburger-line" />
                 </div>
-                <ul className="navigation-links">
+                <ul className="navigation-links" ref={c => this.navLinksEl = c}>
                     <li>
                         <Link to="/">about</Link>
                     </li>

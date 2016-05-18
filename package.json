@@ -29,7 +29,8 @@
     "react-dom": "15.0.1",
     "react-router": "2.4.0",
     "three": "0.76.1",
-    "tween.js": "16.3.4"
+    "tween.js": "16.3.4",
+    "velocity-animate": "1.2.3"
   },
   "devDependencies": {
     "autoprefixer": "6.3.6",

@@ -9,13 +9,6 @@
     background-color: rgba(255, 255, 255, 0.9);
     font-family: "Macula Solid", "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
 
-    &.is-open {
-
-        .navigation-links {
-            max-height: 350px;
-        }
-    }
-
     .navigation-my-name {
         margin-bottom: $base-unit;
         text-align: center;
@@ -34,8 +27,7 @@
         }
     }
     .navigation-links {
-        max-height: 0;
-        overflow: hidden;
+        display: none;
         margin: ($base-unit * 2) 0 0;
         padding: 0 $base-unit;
         list-style: none;
