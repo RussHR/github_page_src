@@ -12,21 +12,20 @@ export default class NavigationMenu extends Component {
     }
 
     toggleMenu() {
-        const { isOpen } = this.state;
-        this.setState({ isOpen: !isOpen }, () => {
-            velocity(this.navLinksEl, isOpen ? 'slideUp' : 'slideDown', {
+        this.setState({ isOpen: !this.state.isOpen }, () => {
+            velocity(this.navLinksEl, this.state.isOpen ? 'slideDown' : 'slideUp', {
                 duration: 500,
-                easing: 500
-              });
+                easing: 'ease-out'
+            });
         });
     }
 
     render() {
-        const navMenuClass = classNames('navigation-menu', { 'is-open': this.state.isOpen });
+        const navToggleClass = classNames('navigation-menu-toggle', { 'is-open': this.state.isOpen });
         return (
-            <div className={navMenuClass}>
+            <div className="navigation-menu">
                 <h1 className="navigation-my-name">russ rinzler</h1>
-                <div className="navigation-menu-toggle" onClick={() => this.toggleMenu()}>
+                <div className={navToggleClass} onClick={() => this.toggleMenu()}>
                     <div className="hamburger-line" />
                     <div className="hamburger-line" />
                     <div className="hamburger-line" />

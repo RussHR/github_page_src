@@ -1,6 +1,9 @@
+@import '../../styles/variables';
+
 .current-content {
     position: relative;
     z-index: 1;
+    padding: $base-unit;
 }
 .current-background {
     position: fixed;
