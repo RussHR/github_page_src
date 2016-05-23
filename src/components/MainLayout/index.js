@@ -9,7 +9,7 @@ export default class MainLayout extends Component {
         return (
             <div>
                 <NavigationMenu />
-                <div className="current-content">
+                <div className="main-content">
                     {this.props.children}
                 </div>
                 <div className="current-background">

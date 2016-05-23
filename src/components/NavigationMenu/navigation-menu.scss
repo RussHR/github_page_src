@@ -8,6 +8,7 @@
     border-bottom: 1px solid black;
     background-color: rgba(255, 255, 255, 0.8);
     font-family: "Macula Solid", "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+    vertical-align: top;
 
     .navigation-my-name {
         margin-bottom: $base-unit;
@@ -45,5 +46,20 @@
     }
     .nested-link {
         padding-left: $base-unit * 1.5;
+    }
+
+    @media (min-width: $tablet-min-width) and (max-width: $tablet-max-width) {
+        display: inline-block;
+        min-height: 100vh;
+        width: $width-medium--navigation-menu;
+        border-bottom-style: none;
+        border-right: 1px solid black;
+
+        .navigation-menu-toggle {
+            display: none;
+        }
+        .navigation-links {
+            display: block !important; // override the inline style set by velocity, remove if writing own slideUp/Down
+        }
     }
 }

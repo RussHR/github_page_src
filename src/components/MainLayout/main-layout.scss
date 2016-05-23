@@ -1,9 +1,15 @@
 @import '../../styles/variables';
 
-.current-content {
+.main-content {
     position: relative;
     z-index: 1;
     padding: $base-unit;
+    vertical-align: top;
+
+    @media (min-width: $tablet-min-width) and (max-width: $tablet-max-width) {
+        display: inline-block;
+        width: $width-medium--main-content;
+    }
 }
 .current-background {
     position: fixed;
