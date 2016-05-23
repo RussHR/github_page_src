@@ -8,6 +8,7 @@
 
     @media (min-width: $tablet-min-width) {
         display: inline-block;
+        padding: $base-unit * 2;
         width: $width-medium--main-content;
     }
     @media (min-width: $tablet-max-width + 1px) {
