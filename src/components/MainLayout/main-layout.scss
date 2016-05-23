@@ -6,8 +6,11 @@
     padding: $base-unit;
     vertical-align: top;
 
-    @media (min-width: $tablet-min-width) and (max-width: $tablet-max-width) {
+    @media (min-width: $tablet-min-width) {
         display: inline-block;
+        width: $width-medium--main-content;
+    }
+    @media (min-width: $tablet-max-width + 1px) {
         width: $width-medium--main-content;
     }
 }
