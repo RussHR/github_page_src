@@ -4,13 +4,9 @@ import ContentLayout from '../ContentLayout';
 
 export default function CreditKarmaPage() {
     return (
-        <ContentLayout header="credit karma">
-            <h3>
-                front end engineer, may 2015 - present
-            </h3>
-            <p>
-                <a href="https://www.creditkarma.com" target="_blank">https://www.creditkarma.com</a>
-            </p>
+        <ContentLayout header="credit karma"
+                       subheader="front end engineer, may 2015 - present"
+                       mainLink="www.creditkarma.com">
             <p>
                 generally, I'm implementing user interfaces and the front end architecture of new microservices
                 that use <strong>React, Flux (Redux), and ECMAScript 6</strong>. sometimes, I collaborate with

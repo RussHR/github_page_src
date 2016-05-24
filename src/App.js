@@ -2,8 +2,11 @@ import React, { Component } from 'react';
 import { Router, Route, IndexRoute, hashHistory, Redirect } from 'react-router';
 
 import CreditKarmaPage from './components/CreditKarmaPage';
-import MainLayout from './components/MainLayout';
+import GranicusPage from './components/GranicusPage';
 import Home from './components/Home';
+import MainLayout from './components/MainLayout';
+import OrthofloatPage from './components/OrthofloatPage';
+import TrendtrendPage from './components/TrendtrendPage';
 
 export default class App extends Component {
     render() {
@@ -14,9 +17,9 @@ export default class App extends Component {
                     <Redirect from="about" to="/" />
 
                     <Route path="work/credit-karma" component={CreditKarmaPage} />
-                    <Route path="work/granicus" component={Home} />
-                    <Route path="play/orthofloat" component={Home} />
-                    <Route path="play/trendtrend" component={Home} />
+                    <Route path="work/granicus" component={GranicusPage} />
+                    <Route path="play/orthofloat" component={OrthofloatPage} />
+                    <Route path="play/trendtrend" component={TrendtrendPage} />
                     <Route path="links-contact" component={Home} />
 
                     <Route path="*" component={Home} />
