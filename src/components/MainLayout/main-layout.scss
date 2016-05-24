@@ -1,5 +1,10 @@
 @import '../../styles/variables';
 
+.main-layout {
+    display: flex;
+    align-items: stretch;
+    flex-wrap: wrap;
+}
 .main-content {
     position: relative;
     z-index: 1;
@@ -7,7 +12,6 @@
     vertical-align: top;
 
     @media (min-width: $tablet-min-width) {
-        display: inline-block;
         padding: $base-unit * 2;
         width: $width-medium--main-content;
     }

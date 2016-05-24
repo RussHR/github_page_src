@@ -18,7 +18,7 @@ export default class MainLayout extends Component {
 
     render() {
         return (
-            <div>
+            <div className="main-layout">
                 <NavigationMenu />
                 <div className="main-content">
                     {this.props.children}
