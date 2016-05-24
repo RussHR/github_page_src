@@ -5,6 +5,17 @@ import Orthofloat from '../Orthofloat';
 import './main-layout.scss';
 
 export default class MainLayout extends Component {
+    constructor(props) {
+        super(props);
+        this.state = { hue: Math.random() };
+    }
+
+    componentWillReceiveProps(nextProps) {
+        if (nextProps.location.pathname !== this.props.location.pathname) {
+            this.setState({ hue: Math.random() });
+        }
+    }
+
     render() {
         return (
             <div>
@@ -13,7 +24,7 @@ export default class MainLayout extends Component {
                     {this.props.children}
                 </div>
                 <div className="current-background">
-                    <Orthofloat hue={Math.random()} />
+                    <Orthofloat hue={this.state.hue} />
                 </div>
             </div>
         );
@@ -21,5 +32,8 @@ export default class MainLayout extends Component {
 }
 
 MainLayout.propTypes = {
-    children: PropTypes.node.isRequired
+    children: PropTypes.node.isRequired,
+    location: PropTypes.shape({
+        pathname: PropTypes.string.isRequired
+    }).isRequired
 };
