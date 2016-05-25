@@ -10,6 +10,7 @@
     z-index: 1;
     padding: $base-unit;
     vertical-align: top;
+    width: 100%;
 
     @media (min-width: $tablet-min-width) {
         padding: $base-unit * 2;
