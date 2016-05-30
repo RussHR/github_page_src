@@ -8,7 +8,8 @@ export default function TrendtrendPage() {
                        subheader="resolved - october 2015"
                        mainLink="http://russhr.github.io/trendtrend">
             <p>
-                wow redux and audio analysis and glitches wow real description coming later!
+                trendtrend leverages React and Flux (Redux) to use APIs from tumblr and Spotify, analyzing
+                tracks and animate images to the amplitude of the sound waves.
             </p>
         </ContentLayout>
     );
