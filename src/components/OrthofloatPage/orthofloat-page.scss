@@ -1,0 +1,13 @@
+$video-height-width-ratio: (417/640); // original embed is height: 417px; width: 640px;
+$video-width: 100%;
+
+.vimeo-wrapper {
+    position: relative;
+    width: $video-width;
+    padding-bottom: $video-width * $video-height-width-ratio;
+}
+.orthofloat-video {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
