@@ -1,6 +1,6 @@
 import React from 'react';
 
-import ContentLayout from '../ContentLayout';
+import ContentLayout from '../../layout/ContentLayout';
 
 export default function TrendtrendPage() {
     return (

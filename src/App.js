@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import { Router, Route, IndexRoute, hashHistory, Redirect } from 'react-router';
 
-import CreditKarmaPage from './components/CreditKarmaPage';
-import GranicusPage from './components/GranicusPage';
+import CreditKarmaPage from './components/pages/CreditKarmaPage';
+import GranicusPage from './components/pages/GranicusPage';
 import Home from './components/Home';
-import MainLayout from './components/MainLayout';
-import OrthofloatPage from './components/OrthofloatPage';
-import TrendtrendPage from './components/TrendtrendPage';
+import MainLayout from './components/layout/MainLayout';
+import OrthofloatPage from './components/pages/OrthofloatPage';
+import TrendtrendPage from './components/pages/TrendtrendPage';
 
 export default class App extends Component {
     render() {
