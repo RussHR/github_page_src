@@ -1,25 +1,19 @@
 import React from 'react';
 
 import ContentLayout from '../../layout/ContentLayout';
-
-import './orthofloat-page.scss';
+import VimeoVideo from '../../VimeoVideo';
 
 export default function OrthofloatPage() {
     return (
-        <ContentLayout header="trendtrend"
+        <ContentLayout header="orthofloat"
                        subheader="in progress"
                        mainLink="http://russhr.github.io/orthofloat">
             <p>
-                wow three.js wow real description coming later!
+                orthofloat marks a foray into WebGL with three.js.
+                currently, you can actively make the cubes a random color.
             </p>
-            <div className="vimeo-wrapper">
-                <iframe src="https://player.vimeo.com/video/168572687"
-                    className="orthofloat-video"
-                    frameBorder="0"
-                    webkitAllowFullScreen
-                    mozallowfullscreen
-                    allowFullScreen />
-            </div>
+            <VimeoVideo style={{ width:"100%", paddingBottom: `${(417/640) * 100}%` }}
+                        src="https://player.vimeo.com/video/168572687" />
         </ContentLayout>
     );
 }
