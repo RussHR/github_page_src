@@ -1,8 +1,8 @@
 import React, { PropTypes } from 'react';
 
-import './vimeo-video.scss';
+import './video-iframe.scss';
 
-export default function VimeoVideo({ style, src }) {
+export default function VideoIFrame({ style, src }) {
     return (
         <div className="vimeo-wrapper" style={style}>
             <iframe src={src}
@@ -15,7 +15,7 @@ export default function VimeoVideo({ style, src }) {
     );
 }
 
-VimeoVideo.propTypes = {
+VideoIFrame.propTypes = {
     style: PropTypes.shape({
         width: PropTypes.oneOfType([ PropTypes.number, PropTypes.string ]).isRequired,
         heightWidthRatio: PropTypes.number.isRequired       
