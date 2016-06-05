@@ -7,7 +7,7 @@ export default function TrendtrendPage() {
     return (
         <ContentLayout header="trendtrend"
                        subheader="resolved - october 2015"
-                       mainLink="http://russhr.github.io/trendtrend">
+                       links={[ 'http://russhr.github.io/trendtrend', 'https://github.com/RussHR/trendtrend_source' ]}>
             <p>
                 trendtrend leverages React and Flux (Redux) to use APIs from tumblr and Spotify, analyzing
                 tracks and animating images to the amplitude of the sound waves.

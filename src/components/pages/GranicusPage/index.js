@@ -7,7 +7,7 @@ export default function GranicusPage() {
     return (
         <ContentLayout header="granicus"
                        subheader="front end developer, january 2014 - april 2015"
-                       mainLink="http://www.granicus.com">
+                       links={['http://www.granicus.com']}>
             <div>
                 at Granicus, I:
                 <ul>
