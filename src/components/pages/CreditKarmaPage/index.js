@@ -4,23 +4,53 @@ import ContentLayout from '../../layout/ContentLayout';
 import ImageGallery from '../../ImageGallery';
 
 const imageSpecs = [
-    { name: 'ccu' },
-    { name: 'ccu-mobile' },
-    { name: 'our-leaders' },
-    { name: 'our-leaders-mobile' },
-    { name: 'coverage' },
-    { name: 'coverage-mobile' },
-    { name: 'coverage-details' }
+    {
+        name: 'ccu',
+        sizes: [ '320', '500', '800', '880' ],
+        alt: 'Credit Card Utilization'
+    },
+    {
+        name: 'ccu-mobile',
+        sizes: [ '320', '494' ],
+        alt: 'Credit Card Utilization Mobile'
+    },
+    {
+        name: 'our-leaders',
+        sizes: [ '320', '500', '800', '1020' ],
+        alt: 'Our Leaders'
+    },
+    {
+        name: 'our-leaders-mobile',
+        sizes: [ '320', '500', '758' ],
+        alt: 'Our Leaders Mobile'
+    },
+    {
+        name: 'coverage',
+        sizes: [ '320', '500', '800', '1024' ],
+        alt: 'Auto Insurance Coverage'
+    },
+    {
+        name: 'coverage-mobile',
+        sizes: [ '320', '400' ],
+        alt: 'Auto Insurance Coverage Mobile'
+    },
+    {
+        name: 'coverage-details',
+        sizes: [ '320', '500', '800', '1024' ],
+        alt: 'Auto Insurance Coverage Details'
+    }
 ];
 
 const images = imageSpecs.map(imageSpec => {
     return {
-        thumbnail: require(`../../../images/credit-karma/${imageSpec.name}-thumbnail.png`)
+        src: require(`../../../images/credit-karma/${imageSpec.name}-320.png`),
+        thumbnail: require(`../../../images/credit-karma/${imageSpec.name}-thumbnail.png`),
+        thumbAlt: `${imageSpec.thumbAlt} Thumbnail`,
+        alt: imageSpec.alt
     };
 });
 
 export default function CreditKarmaPage() {
-    console.log(images);
     return (
         <ContentLayout header="credit karma"
                        subheader="front end engineer, may 2015 - present"
