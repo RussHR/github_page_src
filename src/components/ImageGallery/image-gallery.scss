@@ -1,8 +1,8 @@
 @import '../../styles/variables';
 
 .image-gallery-thumbnail {
-    height: 96px;
-    width: 96px;
-    margin: 8px;
+    height: $base-unit * 12;
+    width: $base-unit * 12;
+    margin: $base-unit;
     cursor: pointer;
 }

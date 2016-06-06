@@ -1,0 +1,19 @@
+@import '../../styles/variables';
+
+.lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.3);
+
+    .lightbox-image {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        max-height: calc(100% - #{$base-unit * 8});
+        max-width: calc(100% - #{$base-unit * 4});
+    }
+}

@@ -45,7 +45,7 @@ const images = imageSpecs.map(imageSpec => {
     return {
         src: require(`../../../images/credit-karma/${imageSpec.name}-320.png`),
         thumbnail: require(`../../../images/credit-karma/${imageSpec.name}-thumbnail.png`),
-        thumbAlt: `${imageSpec.thumbAlt} Thumbnail`,
+        thumbAlt: `${imageSpec.alt} Thumbnail`,
         alt: imageSpec.alt
     };
 });
