@@ -1,4 +1,8 @@
+@import '../../styles/variables';
+
 .image-gallery-thumbnail {
-    height: 100px;
-    width: 100px;
+    height: 96px;
+    width: 96px;
+    margin: 8px;
+    cursor: pointer;
 }

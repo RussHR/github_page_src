@@ -6,11 +6,9 @@ export default class ImageGallery extends Component {
     render() {
         return (
             <div>
-                <div>
-                    {this.props.images.map((image, i) =>
-                        <img src={image.thumbnail} key={i} className="image-gallery-thumbnail" />
-                    )}
-                </div>
+                {this.props.images.map((image, i) =>
+                    <img src={image.thumbnail} key={i} className="image-gallery-thumbnail" />
+                )}
             </div>
         );
     }

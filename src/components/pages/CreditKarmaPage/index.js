@@ -3,14 +3,24 @@ import React from 'react';
 import ContentLayout from '../../layout/ContentLayout';
 import ImageGallery from '../../ImageGallery';
 
-const ccuThumbSrc = require('../../../images/creditKarma/ccu-thumbnail.png');
+const imageSpecs = [
+    { name: 'ccu' },
+    { name: 'ccu-mobile' },
+    { name: 'our-leaders' },
+    { name: 'our-leaders-mobile' },
+    { name: 'coverage' },
+    { name: 'coverage-mobile' },
+    { name: 'coverage-details' }
+];
+
+const images = imageSpecs.map(imageSpec => {
+    return {
+        thumbnail: require(`../../../images/credit-karma/${imageSpec.name}-thumbnail.png`)
+    };
+});
 
 export default function CreditKarmaPage() {
-    const images = [
-        {
-            thumbnail: ccuThumbSrc
-        }
-    ];
+    console.log(images);
     return (
         <ContentLayout header="credit karma"
                        subheader="front end engineer, may 2015 - present"
