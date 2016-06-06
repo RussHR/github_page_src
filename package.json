@@ -1,7 +1,6 @@
 {
-  "name": "react-slingshot",
-  "version": "3.0.1",
-  "description": "Starter kit for creating apps with React and Redux",
+  "name": "github_page_src",
+  "description": "Source for Russ's portfolio",
   "scripts": {
     "start-message": "babel-node tools/startMessage.js",
     "prestart": "npm-run-all --parallel start-message remove-dist",
@@ -18,8 +17,7 @@
     "test": "mocha tools/testSetup.js --reporter progress",
     "test:watch": "npm run test -- --watch"
   },
-  "author": "Cory House",
-  "license": "MIT",
+  "author": "Russ Rinzler",
   "dependencies": {
     "classnames": "2.2.5",
     "lodash": "4.12.0",
@@ -90,6 +88,6 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/coryhouse/react-slingshot"
+    "url": "https://github.com/RussHR/github_page_src"
   }
 }
