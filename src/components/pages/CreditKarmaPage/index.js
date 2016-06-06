@@ -3,10 +3,12 @@ import React from 'react';
 import ContentLayout from '../../layout/ContentLayout';
 import ImageGallery from '../../ImageGallery';
 
+const ccuThumbSrc = require('../../../images/creditKarma/ccu-thumbnail.png');
+
 export default function CreditKarmaPage() {
     const images = [
         {
-            thumbnail: 'http://cdn.bulbagarden.net/upload/thumb/0/0d/025Pikachu.png/250px-025Pikachu.png'
+            thumbnail: ccuThumbSrc
         }
     ];
     return (

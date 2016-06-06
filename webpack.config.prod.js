@@ -29,7 +29,7 @@ export default {
   module: {
     loaders: [
       {test: /\.js$/, include: path.join(__dirname, 'src'), loaders: ['babel']},
-      {test: /\.(jpe?g|png|gif|svg)$/i, loaders: ['file']},
+      {test: /\.(jpe?g|png|gif|svg)$/i, loaders: ['file?name=[path][name].[ext]&context=./src']},
       {test: /\.ico$/, loader: 'file-loader?name=[name].[ext]'},
       {
         test: /(\.css|\.scss)$/,
