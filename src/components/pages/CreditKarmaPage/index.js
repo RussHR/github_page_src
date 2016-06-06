@@ -42,11 +42,19 @@ const imageSpecs = [
 ];
 
 const images = imageSpecs.map(imageSpec => {
+    const initialSrc = require(`../../../images/credit-karma/${imageSpec.name}-${imageSpec.sizes[0]}.png`);
+
+    const srcset = imageSpec.sizes.slice(1).reduce((previousVal, currentVal) => {
+        const imgSrc = require(`../../../images/credit-karma/${imageSpec.name}-${currentVal}.png`);
+        return previousVal.concat(`, ${imgSrc} ${currentVal}w`);
+    }, `${initialSrc} ${imageSpec.sizes[0]}w`);
+
     return {
-        src: require(`../../../images/credit-karma/${imageSpec.name}-320.png`),
+        src: initialSrc,
         thumbnail: require(`../../../images/credit-karma/${imageSpec.name}-thumbnail.png`),
         thumbAlt: `${imageSpec.alt} Thumbnail`,
-        alt: imageSpec.alt
+        alt: imageSpec.alt,
+        srcset: srcset
     };
 });
 

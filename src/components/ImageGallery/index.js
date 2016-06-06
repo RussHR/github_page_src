@@ -44,6 +44,7 @@ ImageGallery.propTypes = {
         thumbnail: PropTypes.string.isRequired,
         thumbAlt: PropTypes.string.isRequired,
         alt: PropTypes.string.isRequired,
-        src: PropTypes.string.isRequired
+        src: PropTypes.string.isRequired,
+        srcset: PropTypes.string.isRequired
     })).isRequired
 };
