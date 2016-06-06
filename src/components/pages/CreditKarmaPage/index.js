@@ -1,8 +1,14 @@
 import React from 'react';
 
 import ContentLayout from '../../layout/ContentLayout';
+import ImageGallery from '../../ImageGallery';
 
 export default function CreditKarmaPage() {
+    const images = [
+        {
+            thumbnail: 'http://cdn.bulbagarden.net/upload/thumb/0/0d/025Pikachu.png/250px-025Pikachu.png'
+        }
+    ];
     return (
         <ContentLayout header="credit karma"
                        subheader="front end engineer, may 2015 - present"
@@ -16,6 +22,7 @@ export default function CreditKarmaPage() {
                 Credit Karma at local LGBT events, and as part of a focus group, we are figuring out how best to
                 engage with issues of diversity and inclusion within our industry.
             </p>
+            <ImageGallery images={images} />
             <p>
                 more work is available upon request.
             </p>
