@@ -1,8 +1,18 @@
 @import '../../styles/variables';
 
-.image-gallery-thumbnail {
-    height: $base-unit * 12;
-    width: $base-unit * 12;
-    margin: $base-unit;
-    cursor: pointer;
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .image-gallery-thumbnail {
+        height: $base-unit * 12;
+        width: $base-unit * 12;
+        margin: $base-unit;
+        cursor: pointer;
+    }
+
+    @media (min-width: $tablet-min-width) {
+        justify-content: flex-start;
+    }
 }

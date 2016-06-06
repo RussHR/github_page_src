@@ -25,7 +25,7 @@ export default class ImageGallery extends Component {
             : null;
 
         return (
-            <div>
+            <div className="image-gallery">
                 {this.props.images.map((image, i) =>
                     <img className="image-gallery-thumbnail"
                          src={image.thumbnail}
