@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import { Router, Route, IndexRoute, Redirect } from 'react-router';
-import createHistory from 'history/lib/createHashHistory';
+import { Router, Route, IndexRoute, hashHistory, Redirect } from 'react-router';
 
 import CreditKarmaPage from './components/pages/CreditKarmaPage';
 import GranicusPage from './components/pages/GranicusPage';
@@ -9,12 +8,10 @@ import MainLayout from './components/layout/MainLayout';
 import OrthofloatPage from './components/pages/OrthofloatPage';
 import TrendtrendPage from './components/pages/TrendtrendPage';
 
-const history = createHistory({ queryKey: false });
-
 export default class App extends Component {
     render() {
         return (
-            <Router history={history}>
+            <Router history={hashHistory}>
                 <Route path="/" component={MainLayout}>
                     <IndexRoute component={Home} />
                     <Redirect from="about" to="/" />
