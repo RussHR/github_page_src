@@ -11,6 +11,7 @@ export default function TrendtrendPage() {
             <p>
                 trendtrend leverages React and Flux (Redux) to use APIs from tumblr and Spotify, analyzing
                 tracks and animating images to the amplitude of the sound waves.
+                it works on <strong>desktop browsers only</strong>.
             </p>
             <p>
                 <strong>CAUTION:</strong> the video below contains <strong>loud sounds and moving images.</strong>
