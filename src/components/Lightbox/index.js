@@ -1,10 +1,12 @@
 import React, { PropTypes } from 'react';
+import Loading from '../Loading';
 
 import './lightbox.scss';
 
 export default function Lightbox({ image, onClose }) {
     return (
         <div className="lightbox" onClick={onClose}>
+            <Loading style={{ color: 'white' }} />
             <img className="lightbox-image" src={image.src} srcSet={image.srcset} alt={image.alt} />
         </div>
     );
