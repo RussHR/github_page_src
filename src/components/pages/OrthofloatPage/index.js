@@ -7,7 +7,7 @@ export default function OrthofloatPage() {
     return (
         <ContentLayout header="orthofloat"
                        subheader="in progress"
-                       links={[ 'http://russhr.github.io/orthofloat', 'https://github.com/RussHR/orthofloat_src' ]}>
+                       links={[ 'http://russrinzler.com/orthofloat', 'https://github.com/RussHR/orthofloat_src' ]}>
             <p>
                 orthofloat marks a foray into WebGL with three.js.
                 currently, you can actively make the cubes a random color.
