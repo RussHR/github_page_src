@@ -32,28 +32,28 @@ export default class NavigationMenu extends Component {
                 </div>
                 <ul className="navigation-links" ref={c => this.navLinksEl = c}>
                     <li>
-                        <Link to="/">about</Link>
+                        <Link to="/" onClick={() => this.toggleMenu()}>about</Link>
                     </li>
                     <li>
                         work
                     </li>
                     <li className="nested-link">
-                        <Link to="/work/credit-karma">credit karma</Link>
+                        <Link to="/work/credit-karma" onClick={() => this.toggleMenu()}>credit karma</Link>
                     </li>
                     <li className="nested-link">
-                        <Link to="/work/granicus">granicus</Link>
+                        <Link to="/work/granicus" onClick={() => this.toggleMenu()}>granicus</Link>
                     </li>
                     <li>
                         play
                     </li>
                     <li className="nested-link">
-                        <Link to="/play/orthofloat">orthofloat</Link>
+                        <Link to="/play/orthofloat" onClick={() => this.toggleMenu()}>orthofloat</Link>
                     </li>
                     <li className="nested-link">
-                        <Link to="/play/trendtrend">trendtrend</Link>
+                        <Link to="/play/trendtrend" onClick={() => this.toggleMenu()}>trendtrend</Link>
                     </li>
                     <li>
-                        <Link to="/links-contact">links & contact</Link>
+                        <Link to="/links-contact" onClick={() => this.toggleMenu()}>links & contact</Link>
                     </li>
                 </ul>
             </div>
