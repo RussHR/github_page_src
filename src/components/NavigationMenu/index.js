@@ -24,7 +24,9 @@ export default class NavigationMenu extends Component {
         const navToggleClass = classNames('navigation-menu-toggle', { 'is-open': this.state.isOpen });
         return (
             <div className="navigation-menu">
-                <h1 className="navigation-my-name">russ rinzler</h1>
+                <h1 className="navigation-my-name">
+                    <Link to="/">russ rinzler</Link>
+                </h1>
                 <div className={navToggleClass} onClick={() => this.toggleMenu()}>
                     <div className="hamburger-line" />
                     <div className="hamburger-line" />

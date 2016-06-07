@@ -12,6 +12,11 @@
     .navigation-my-name {
         margin-bottom: $base-unit;
         text-align: center;
+
+        > a {
+            text-decoration: none;
+            color: black;
+        }
     }
     .navigation-menu-toggle {
         cursor: pointer;
