@@ -1,6 +1,7 @@
 import React, { Component, PropTypes } from 'react';
 import NavigationMenu from '../../NavigationMenu';
 import Orthofloat from 'orthofloat';
+import { randomWithRange } from '../../../businessLogic/mathHelpers';
 
 import './main-layout.scss';
 
@@ -12,8 +13,17 @@ export default class MainLayout extends Component {
 
     componentWillReceiveProps(nextProps) {
         if (nextProps.location.pathname !== this.props.location.pathname) {
-            this.setState({ hue: Math.random() });
+            this.changeHue();
         }
+    }
+
+    changeHue() {
+        let { hue } = this.state;
+        hue += randomWithRange(1/6, 5/6);
+        if (hue >= 1) {
+            hue -= 1;
+        }
+        this.setState({ hue });
     }
 
     render() {
