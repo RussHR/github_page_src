@@ -12,6 +12,10 @@
     vertical-align: top;
     width: 100%;
 
+    a {
+        word-wrap: break-word;
+    }
+
     @media (min-width: $tablet-min-width) {
         padding: $base-unit * 2;
         width: $width-medium--main-content;
