@@ -1,6 +1,6 @@
 import React, { Component, PropTypes } from 'react';
 import NavigationMenu from '../../NavigationMenu';
-import Orthofloat from '../../Orthofloat';
+import Orthofloat from 'orthofloat';
 
 import './main-layout.scss';
 
