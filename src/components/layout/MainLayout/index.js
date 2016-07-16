@@ -1,14 +1,16 @@
 import React, { Component, PropTypes } from 'react';
 import NavigationMenu from '../../NavigationMenu';
-import Orthofloat from 'orthofloat';
-import { randomWithRange } from '../../../businessLogic/mathHelpers';
-
+import Orthofloat, { randomRGB, randomWithRange } from 'orthofloat';
 import './main-layout.scss';
 
 export default class MainLayout extends Component {
     constructor(props) {
         super(props);
-        this.state = { hue: Math.random() };
+        this.state = {
+            topColor: randomRGB(),
+            bottomColor: randomRGB(),
+            cameraAngle: 0
+        };
     }
 
     componentWillReceiveProps(nextProps) {
@@ -18,15 +20,16 @@ export default class MainLayout extends Component {
     }
 
     changeHue() {
-        let { hue } = this.state;
-        hue += randomWithRange(1/6, 5/6);
-        if (hue >= 1) {
-            hue -= 1;
-        }
-        this.setState({ hue });
+        this.setState({
+            topColor: randomRGB(),
+            bottomColor: randomRGB(),
+            cameraAngle: randomWithRange(0, 360)
+        });
     }
 
     render() {
+        const { bottomColor, topColor, cameraAngle } = this.state;
+
         return (
             <div className="main-layout">
                 <NavigationMenu />
@@ -34,7 +37,7 @@ export default class MainLayout extends Component {
                     {this.props.children}
                 </div>
                 <div className="current-background">
-                    <Orthofloat hue={this.state.hue} />
+                    <Orthofloat topColor={topColor} bottomColor={bottomColor} cameraAngle={cameraAngle} />
                 </div>
             </div>
         );
