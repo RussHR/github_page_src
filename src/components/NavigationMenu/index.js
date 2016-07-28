@@ -40,22 +40,22 @@ export default class NavigationMenu extends Component {
                         work
                     </li>
                     <li className="nested-link">
-                        <Link to="/work/credit-karma">credit karma</Link>
+                        <Link activeClassName="nav-link-active" to="/work/credit-karma">credit karma</Link>
                     </li>
                     <li className="nested-link">
-                        <Link to="/work/granicus">granicus</Link>
+                        <Link activeClassName="nav-link-active" to="/work/granicus">granicus</Link>
                     </li>
                     <li>
                         play
                     </li>
                     <li className="nested-link">
-                        <Link to="/play/orthofloat">orthofloat</Link>
+                        <Link activeClassName="nav-link-active" to="/play/orthofloat">orthofloat</Link>
                     </li>
                     <li className="nested-link">
-                        <Link to="/play/trendtrend">trendtrend</Link>
+                        <Link activeClassName="nav-link-active" to="/play/trendtrend">trendtrend</Link>
                     </li>
                     <li>
-                        <Link to="/links-contact">links & contact</Link>
+                        <Link activeClassName="nav-link-active" to="/links-contact">links & contact</Link>
                     </li>
                 </ul>
             </div>
