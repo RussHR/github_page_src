@@ -49,6 +49,9 @@ export default class NavigationMenu extends Component {
                         play
                     </li>
                     <li className="nested-link">
+                        <Link activeClassName="nav-link-active" to="/play/autobiography-1">autobiography 1</Link>
+                    </li>
+                    <li className="nested-link">
                         <Link activeClassName="nav-link-active" to="/play/orthofloat">orthofloat</Link>
                     </li>
                     <li className="nested-link">
