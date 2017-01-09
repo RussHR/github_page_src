@@ -11,8 +11,8 @@ export default function HomageToBarraganPage() {
             <p>
                 homage to barragán is simply that: an homage to late architect <a href="https://en.wikipedia.org/wiki/Luis_Barrag%C3%A1n" target="_blank">Luis Barragán</a>.
             </p>
-            <VideoIFrame style={{ width:"100%", paddingBottom: `${(666/1206) * 100}%` }}
-                        src="https://player.vimeo.com/video/178854370" />
+            <VideoIFrame style={{ width:"100%", paddingBottom: `${(439/640) * 100}%` }}
+                        src="https://player.vimeo.com/video/198635162" />
         </ContentLayout>
     );
 }
