@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router';
 
 export default function Home() {
     return (
@@ -20,9 +19,6 @@ export default function Home() {
             </p>
             <p>
                 I apologize for the hash appended in the url. a caveat for using github pages.
-            </p>
-            <p>
-                current background: <Link to="/play/orthofloat">orthofloat</Link>
             </p>
         </div>
     );
