@@ -36,17 +36,12 @@ export default class NavigationMenu extends Component {
                     <li>
                         <Link to="/">about</Link>
                     </li>
-                    <li>
-                        work
-                    </li>
-                    <li className="nested-link">
-                        <Link activeClassName="nav-link-active" to="/work/credit-karma">credit karma</Link>
-                    </li>
-                    <li className="nested-link">
-                        <Link activeClassName="nav-link-active" to="/work/granicus">granicus</Link>
-                    </li>
+
                     <li>
                         play
+                    </li>
+                    <li className="nested-link">
+                        <Link activeClassName="nav-link-active" to="/play/homage-to-barragan">homage to barrágan</Link>
                     </li>
                     <li className="nested-link">
                         <Link activeClassName="nav-link-active" to="/play/autobiography-1">autobiography 1</Link>
@@ -59,6 +54,16 @@ export default class NavigationMenu extends Component {
                     </li>
                     <li>
                         <Link activeClassName="nav-link-active" to="/links-contact">links & contact</Link>
+                    </li>
+
+                    <li>
+                        work
+                    </li>
+                    <li className="nested-link">
+                        <Link activeClassName="nav-link-active" to="/work/credit-karma">credit karma</Link>
+                    </li>
+                    <li className="nested-link">
+                        <Link activeClassName="nav-link-active" to="/work/granicus">granicus</Link>
                     </li>
                 </ul>
             </div>

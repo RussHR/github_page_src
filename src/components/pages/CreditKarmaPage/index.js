@@ -61,7 +61,7 @@ const images = imageSpecs.map(imageSpec => {
 export default function CreditKarmaPage() {
     return (
         <ContentLayout header="credit karma"
-                       subheader="front end engineer, may 2015 - present"
+                       subheader="front end engineer, may 2015 - september 2016"
                        links={['https://www.creditkarma.com']}>
             <p>
                 generally, I'm implementing user interfaces and the front end architecture of new microservices
