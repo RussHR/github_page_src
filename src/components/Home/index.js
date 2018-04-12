@@ -13,13 +13,6 @@ export default function Home() {
                 front end developer, artist, queer, multiracial. I put some things I make here; feel
                 free to poke around.
             </p>
-            <p>
-                all sentences and phrases here begin with lowercase letters unless it begins with a proper
-                noun. "I" and "I'm" are also exceptions.
-            </p>
-            <p>
-                I apologize for the hash appended in the url. a caveat for using github pages.
-            </p>
         </div>
     );
 }
