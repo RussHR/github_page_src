@@ -18,9 +18,9 @@ export default function MainLayout({ children }) {
                 {triangles}
             </div>
             <NavigationMenu />
-            <div className="main-content">
+            <main className="main-content">
                 {children}
-            </div>
+            </main>
         </div>
     );
 }

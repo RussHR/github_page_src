@@ -4,16 +4,16 @@ import './content-layout.scss';
 
 export default function ContentLayout({ header, subheader, links, children }) {
     return (
-        <div>
+        <article>
             <h1 className="content-header">{header}</h1>
-            {subheader ? <h3>{subheader}</h3> : null}
+            {subheader && <h3>{subheader}</h3>}
             {links.map((link, index) =>
                 <p key={index}>
                     <a href={link} target="_blank" className="main-link">{link}</a>
                 </p>
             )}
             {children}
-        </div>
+        </article>
     );
 }
 
