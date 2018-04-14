@@ -1,4 +1,5 @@
-import React, { PropTypes } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 
 import Loading from '../Loading';
 
@@ -11,8 +12,6 @@ export default function VideoIFrame({ style, src }) {
             <iframe src={src}
                 className="vimeo-video"
                 frameBorder="0"
-                webkitAllowFullScreen
-                mozallowfullscreen
                 allowFullScreen />
         </div>
     );

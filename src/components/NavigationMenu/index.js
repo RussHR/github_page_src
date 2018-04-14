@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router';
+import { Link, NavLink } from 'react-router-dom';
 import classNames from 'classnames';
 import velocity from 'velocity-animate';
 
@@ -35,36 +35,40 @@ export default class NavigationMenu extends Component {
                 <nav role="navigation">
                     <ul className="navigation-links" ref={c => this.navLinksEl = c}>
                         <li>
-                            <Link to="/">about</Link>
+                            <NavLink to="/">home</NavLink>
                         </li>
+                        
+                        <br />
 
                         <li>
                             play
                         </li>
                         <li className="nested-link">
-                            <Link activeClassName="nav-link-active" to="/play/homage-to-barragan">homage to barrágan</Link>
+                            <NavLink activeClassName="nav-link-active" to="/play/homage-to-barragan">homage to barrágan</NavLink>
                         </li>
                         <li className="nested-link">
-                            <Link activeClassName="nav-link-active" to="/play/autobiography-1">autobiography 1</Link>
+                            <NavLink activeClassName="nav-link-active" to="/play/autobiography-1">autobiography 1</NavLink>
                         </li>
                         <li className="nested-link">
-                            <Link activeClassName="nav-link-active" to="/play/orthofloat">orthofloat</Link>
+                            <NavLink activeClassName="nav-link-active" to="/play/orthofloat">orthofloat</NavLink>
                         </li>
                         <li className="nested-link">
-                            <Link activeClassName="nav-link-active" to="/play/trendtrend">trendtrend</Link>
+                            <NavLink activeClassName="nav-link-active" to="/play/trendtrend">trendtrend</NavLink>
                         </li>
                         <li>
-                            <Link activeClassName="nav-link-active" to="/links-contact">links & contact</Link>
+                            <NavLink activeClassName="nav-link-active" to="/links-contact">links & contact</NavLink>
                         </li>
+
+                        <br />
 
                         <li>
                             work
                         </li>
                         <li className="nested-link">
-                            <Link activeClassName="nav-link-active" to="/work/credit-karma">credit karma</Link>
+                            <NavLink activeClassName="nav-link-active" to="/work/credit-karma">credit karma</NavLink>
                         </li>
                         <li className="nested-link">
-                            <Link activeClassName="nav-link-active" to="/work/granicus">granicus</Link>
+                            <NavLink activeClassName="nav-link-active" to="/work/granicus">granicus</NavLink>
                         </li>
                     </ul>
                 </nav>

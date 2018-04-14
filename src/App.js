@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Router, Route, IndexRoute, hashHistory, Redirect } from 'react-router';
+import { HashRouter, Route, Switch, Redirect } from 'react-router-dom';
 
 import CreditKarmaPage from './components/pages/CreditKarmaPage';
 import GranicusPage from './components/pages/GranicusPage';
@@ -16,24 +16,25 @@ import LinksContactPage from './components/pages/LinksContactPage';
 export default class App extends Component {
     render() {
         return (
-            <Router history={hashHistory}>
-                <Route path="/" component={MainLayout}>
-                    <IndexRoute component={Home} />
-                    <Redirect from="about" to="/" />
+            <HashRouter>
+                <MainLayout>
+                    <Switch>
+                        <Route exact path="/" component={Home} />
 
-                    <Route path="play/homage-to-barragan" component={HomageToBarraganPage} />
-                    <Route path="play/autobiography-1" component={Autobiography1Page} />
-                    <Route path="play/orthofloat" component={OrthofloatPage} />
-                    <Route path="play/trendtrend" component={TrendtrendPage} />
+                        <Route path="/play/homage-to-barragan" component={HomageToBarraganPage} />
+                        <Route path="/play/autobiography-1" component={Autobiography1Page} />
+                        <Route path="/play/orthofloat" component={OrthofloatPage} />
+                        <Route path="/play/trendtrend" component={TrendtrendPage} />
 
-                    <Route path="work/credit-karma" component={CreditKarmaPage} />
-                    <Route path="work/granicus" component={GranicusPage} />
+                        <Route path="/work/credit-karma" component={CreditKarmaPage} />
+                        <Route path="/work/granicus" component={GranicusPage} />
 
-                    <Route path="links-contact" component={LinksContactPage} />
+                        <Route path="/links-contact" component={LinksContactPage} />
 
-                    <Route path="*" component={Home} />
-                </Route>
-            </Router>
+                        <Redirect path="*" to="/" />
+                    </Switch>
+                </MainLayout>
+            </HashRouter>
         );
     }
 }

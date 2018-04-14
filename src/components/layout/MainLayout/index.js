@@ -1,4 +1,5 @@
-import React, { PropTypes } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 import { times } from 'lodash';
 import NavigationMenu from '../../NavigationMenu';
 import './main-layout.scss';
