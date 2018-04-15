@@ -40,7 +40,7 @@ export default class Lightbox extends PureComponent {
             <section className="lightbox">
                 <header className="lightbox-header">
                     <span className="lightbox-which-photo">{upperLeftCaption}</span>
-                    <button className="lightbox-close" autoFocus aria-label="Close" onClick={onClose}>&#10005;</button>
+                    <button className="lightbox-close" autoFocus aria-label="Close" onClick={onClose}><span>esc </span>&#10005;</button>
                 </header>
                 <section className="lightbox-image-viewer">
                     <button

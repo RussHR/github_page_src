@@ -23,6 +23,12 @@
         right: 8px;
         font-size: 2rem;
         color: white;
+
+        > span {
+            position: relative;
+            top: -7px;
+            font-size: 1rem;
+        }
     }
 
     .lightbox-close,
