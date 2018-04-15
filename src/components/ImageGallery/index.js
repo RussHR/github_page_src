@@ -9,6 +9,9 @@ export default class ImageGallery extends Component {
         super(props);
 
         this.state = { currentImageIndex: null };
+
+        this.showPrevImage = this.showPrevImage.bind(this);
+        this.showNextImage = this.showNextImage.bind(this);
     }
 
     openLightbox(currentImageIndex) {
@@ -17,6 +20,28 @@ export default class ImageGallery extends Component {
 
     closeLightbox() {
         this.setState({ currentImageIndex: null });
+    }
+
+    showPrevImage() {
+        this.setState(({ currentImageIndex }, { images }) => {
+            let newImageIndex = currentImageIndex - 1;
+            if (newImageIndex < 0) {
+                newImageIndex = images.length - 1;
+            }
+
+            return { currentImageIndex: newImageIndex };
+        });
+    }
+
+    showNextImage() {
+        this.setState(({ currentImageIndex }, { images }) => {
+            let newImageIndex = currentImageIndex + 1;
+            if (newImageIndex >= images.length) {
+                newImageIndex = 0;
+            }
+
+            return { currentImageIndex: newImageIndex };
+        });
     }
 
     render() {
@@ -29,6 +54,8 @@ export default class ImageGallery extends Component {
                     onClose={() => this.closeLightbox()}
                     upperLeftCaption={`Image ${currentImageIndex + 1} of ${images.length}`}
                     lowerCaption={images[currentImageIndex]['alt']}
+                    onClickPrevImage={this.showPrevImage}
+                    onClickNextImage={this.showNextImage}
                 />
             )
             : null;

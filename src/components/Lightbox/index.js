@@ -27,21 +27,31 @@ export default class Lightbox extends PureComponent {
     }
 
     render() {
-        const { image, onClose, upperLeftCaption } = this.props;
+        const { image, onClose, upperLeftCaption, onClickPrevImage, onClickNextImage } = this.props;
 
         return (
-            <section className="lightbox" onClick={onClose}>
+            <section className="lightbox">
                 <header className="lightbox-header">
                     <span className="lightbox-which-photo">{upperLeftCaption}</span>
-                    <button className="lightbox-close" autoFocus aria-label="Close">&#10005;</button>
+                    <button className="lightbox-close" autoFocus aria-label="Close" onClick={onClose}>&#10005;</button>
                 </header>
                 <section className="lightbox-image-viewer">
-                    <button className="lightbox-change-image lightbox-prev-image">&#9664;</button>
+                    <button
+                        className="lightbox-change-image lightbox-prev-image"
+                        onClick={onClickPrevImage}
+                    >
+                        &#9664;
+                    </button>
                     <figure className="lightbox-photo-wrapper">
                         <Loading style={{ color: 'white' }} />
                         <img className="lightbox-image" src={image.src} srcSet={image.srcset} alt={image.alt} />
                     </figure>
-                    <button className="lightbox-change-image lightbox-next-image">&#9654;</button>
+                    <button
+                        className="lightbox-change-image lightbox-next-image"
+                        onClick={onClickNextImage}
+                    >
+                        &#9654;
+                    </button>
                 </section>
                 <footer className="lightbox-footer">
                     <figcaption>{image.alt}</figcaption>
@@ -58,5 +68,7 @@ Lightbox.propTypes = {
         srcset: PropTypes.string.isRequired
     }).isRequired,
     onClose: PropTypes.func.isRequired,
-    upperLeftCaption: PropTypes.string.isRequired
+    upperLeftCaption: PropTypes.string.isRequired,
+    onClickPrevImage: PropTypes.func.isRequired,
+    onClickNextImage: PropTypes.func.isRequired
 };
