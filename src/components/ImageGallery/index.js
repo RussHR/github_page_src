@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Lightbox from '../Lightbox';
+import { get } from 'lodash';
 
 import './image-gallery.scss';
 
@@ -24,41 +25,66 @@ export default class ImageGallery extends Component {
 
     showPrevImage() {
         this.setState(({ currentImageIndex }, { images }) => {
-            let newImageIndex = currentImageIndex - 1;
-            if (newImageIndex < 0) {
-                newImageIndex = images.length - 1;
-            }
-
-            return { currentImageIndex: newImageIndex };
+            return { currentImageIndex: this.getPrevIndex(currentImageIndex, images.length) };
         });
     }
 
     showNextImage() {
         this.setState(({ currentImageIndex }, { images }) => {
-            let newImageIndex = currentImageIndex + 1;
-            if (newImageIndex >= images.length) {
-                newImageIndex = 0;
-            }
-
-            return { currentImageIndex: newImageIndex };
+            return { currentImageIndex: this.getNextIndex(currentImageIndex, images.length) };
         });
+    }
+
+    getPrevIndex(oldIndex, numImages) {
+        let newImageIndex = oldIndex - 1;
+        if (newImageIndex < 0) {
+            newImageIndex = numImages - 1;
+        }
+
+        return newImageIndex;
+    }
+
+    getNextIndex(oldIndex, numImages) {
+        let newImageIndex = oldIndex + 1;
+        if (newImageIndex >= numImages) {
+            newImageIndex = 0;
+        }
+
+        return newImageIndex;
+    }
+
+    preloadAdjacentImages() {
+        const { images } = this.props;
+        const { currentImageIndex } = this.state;
+        const numImages = images.length;
+
+        const prevImage = new Image();
+        const nextImage = new Image();
+
+        prevImage.src = get(images, `[${this.getPrevIndex(currentImageIndex, numImages)}].src`);
+        nextImage.src = get(images, `[${this.getNextIndex(currentImageIndex, numImages)}].src`);
     }
 
     render() {
         const { images } = this.props;
         const { currentImageIndex } = this.state;
-        const lightbox = currentImageIndex !== null
-            ? (
+        let lightbox = null;
+
+        // checking for null since this may be zero
+        if (currentImageIndex !== null) {
+            this.preloadAdjacentImages();
+
+            lightbox = (
                 <Lightbox
                     image={images[currentImageIndex]}
                     onClose={() => this.closeLightbox()}
                     upperLeftCaption={`Image ${currentImageIndex + 1} of ${images.length}`}
-                    lowerCaption={images[currentImageIndex]['alt']}
+                    lowerCaption={get(images, 'currentImageIndex.alt', 'No caption found.')}
                     onClickPrevImage={this.showPrevImage}
                     onClickNextImage={this.showNextImage}
                 />
-            )
-            : null;
+            );
+        }
 
         return (
             <section className="image-gallery">
