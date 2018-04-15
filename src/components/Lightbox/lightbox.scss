@@ -45,11 +45,36 @@
         position: relative;
         background-color: hsla(0, 0%, 100%, .05);
         color: white;
+
+        @media (max-width: $tablet-min-width) {
+            position: absolute;
+            height: $base-unit * 8;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 1;
+            background-color: hsla(0, 0%, 0%, 0.1);
+        }
+    }
+
+    .lightbox-prev-image {
+        @media (max-width: $tablet-min-width) {
+            left: 0;
+        }
+    }
+
+    .lightbox-next-image {
+        @media (max-width: $tablet-min-width) {
+            right: 0;
+        }
     }
 
     .lightbox-photo-wrapper {
         width: calc(100% - #{$width-medium--lightbox-change-image-button * 2});
         position: relative;
+
+        @media (max-width: $tablet-min-width) {
+            width: 100%;
+        }
     }
 
     .lightbox-image {

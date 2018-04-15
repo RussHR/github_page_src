@@ -36,12 +36,12 @@ export default class Lightbox extends PureComponent {
                     <button className="lightbox-close" autoFocus aria-label="Close">&#10005;</button>
                 </header>
                 <section className="lightbox-image-viewer">
-                    <button className="lightbox-change-image">&#9664;</button>
+                    <button className="lightbox-change-image lightbox-prev-image">&#9664;</button>
                     <figure className="lightbox-photo-wrapper">
                         <Loading style={{ color: 'white' }} />
                         <img className="lightbox-image" src={image.src} srcSet={image.srcset} alt={image.alt} />
                     </figure>
-                    <button className="lightbox-change-image">&#9654;</button>
+                    <button className="lightbox-change-image lightbox-next-image">&#9654;</button>
                 </section>
                 <footer className="lightbox-footer">
                     <figcaption>{image.alt}</figcaption>
