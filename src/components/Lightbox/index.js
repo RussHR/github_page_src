@@ -27,24 +27,24 @@ export default class Lightbox extends PureComponent {
     }
 
     render() {
-        const { image, onClose } = this.props;
+        const { image, onClose, upperLeftCaption } = this.props;
 
         return (
             <section className="lightbox" onClick={onClose}>
                 <header className="lightbox-header">
-                    <span className="lightbox-which-photo">Image 0 of 0</span>
-                    <button className="lightbox-close" autoFocus>&#10005;</button>
+                    <span className="lightbox-which-photo">{upperLeftCaption}</span>
+                    <button className="lightbox-close" autoFocus aria-label="Close">&#10005;</button>
                 </header>
                 <section className="lightbox-image-viewer">
                     <button className="lightbox-change-image">&#9664;</button>
                     <figure className="lightbox-photo-wrapper">
-                        <img className="lightbox-image" src={image.src} srcSet={image.srcset} alt={image.alt} />
                         <Loading style={{ color: 'white' }} />
+                        <img className="lightbox-image" src={image.src} srcSet={image.srcset} alt={image.alt} />
                     </figure>
                     <button className="lightbox-change-image">&#9654;</button>
                 </section>
                 <footer className="lightbox-footer">
-                    <figcaption>here is a caption</figcaption>
+                    <figcaption>{image.alt}</figcaption>
                 </footer>
             </section>
         );
@@ -53,11 +53,10 @@ export default class Lightbox extends PureComponent {
 
 Lightbox.propTypes = {
     image: PropTypes.shape({
-        thumbnail: PropTypes.string.isRequired,
-        thumbAlt: PropTypes.string.isRequired,
         alt: PropTypes.string.isRequired,
         src: PropTypes.string.isRequired,
         srcset: PropTypes.string.isRequired
     }).isRequired,
-    onClose: PropTypes.func.isRequired    
+    onClose: PropTypes.func.isRequired,
+    upperLeftCaption: PropTypes.string.isRequired
 };

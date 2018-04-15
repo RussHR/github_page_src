@@ -5,9 +5,9 @@ import './loading.scss';
 
 export default function Loading({ style }) {
     return (
-        <div className="loading" style={style}>
+        <span className="loading" style={style}>
             loading
-        </div>
+        </span>
     );
 }
 

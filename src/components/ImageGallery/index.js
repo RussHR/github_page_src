@@ -20,14 +20,22 @@ export default class ImageGallery extends Component {
     }
 
     render() {
-        const lightbox = this.state.currentImageIndex !== null
-            ? <Lightbox image={this.props.images[this.state.currentImageIndex]}
-                        onClose={() => this.closeLightbox()}/>
+        const { images } = this.props;
+        const { currentImageIndex } = this.state;
+        const lightbox = currentImageIndex !== null
+            ? (
+                <Lightbox
+                    image={images[currentImageIndex]}
+                    onClose={() => this.closeLightbox()}
+                    upperLeftCaption={`Image ${currentImageIndex + 1} of ${images.length}`}
+                    lowerCaption={images[currentImageIndex]['alt']}
+                />
+            )
             : null;
 
         return (
             <section className="image-gallery">
-                {this.props.images.map((image, i) =>
+                {images.map((image, i) =>
                     <button onClick={() => this.openLightbox(i)} key={i}>
                         <img className="image-gallery-thumbnail"
                              src={image.thumbnail}
