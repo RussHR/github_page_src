@@ -20,9 +20,16 @@ export default class Lightbox extends PureComponent {
     }
 
     handleKeyboardEvent({ keyCode }) {
-        if (keyCode === 27) {
-            // esc key
-            this.props.onClose();
+        switch (keyCode) {
+            case 27: // esc key
+                this.props.onClose();
+                break;
+            case 37: // left arrow
+                this.props.onClickPrevImage();
+                break;
+            case 39: //right arrow
+                this.props.onClickNextImage();
+                break;
         }
     }
 
