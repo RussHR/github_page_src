@@ -5,6 +5,11 @@
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    transition: opacity 500ms linear;
+
+    &.fade-out {
+        opacity: 0;
+    }
 }
 h1 {
     font-family: "Macula Solid", "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;

@@ -7,4 +7,9 @@ require('./favicon.ico'); //Tell webpack to load favicon.ico
 require('normalize-css');
 import './styles/styles.scss';
 
-render(<App />, document.getElementById('app'));
+const appEl = document.getElementById('app');
+appEl.className = "fade-out";
+
+setTimeout(() => {
+    render(<App />, appEl);
+}, 1000);
