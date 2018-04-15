@@ -3,7 +3,18 @@ $base-unit: 8px;
 $tablet-min-width: 768px;
 $tablet-max-width: 1024px;
 
+$height--lightbox-header: $base-unit * 5;
+$height--lightbox-footer: $base-unit * 12;
 $width-medium--navigation-menu: $base-unit * 35;
 $width-medium--main-content: calc(100% - #{$width-medium--navigation-menu});
+$width-medium--lightbox-change-image-button: $base-unit * 8;
 
 $bg-color-initial: hsla(270, 100%, 95%, 1);
+
+@mixin remove-button-styling() {
+    padding: 0;
+    margin: 0;
+    border-style: none;
+    background: none;
+    -webkit-appearance: none;
+}
