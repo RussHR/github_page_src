@@ -5,6 +5,13 @@
     flex-wrap: wrap;
     justify-content: center;
 
+    > button {
+        padding: 0;
+        border-style: none;
+        background: none;
+        -webkit-appearance: none;
+    }
+
     .image-gallery-thumbnail {
         height: $base-unit * 12;
         width: $base-unit * 12;

@@ -24,8 +24,11 @@
     }
     .navigation-menu-toggle {
         width: 100%;
+        margin: 0;
+        padding: 0;
         border-style: none;
         background: none;
+        -webkit-appearance: none;
 
         &.is-open > .hamburger-line {
             border: 1px solid black;

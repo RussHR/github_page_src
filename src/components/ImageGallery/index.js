@@ -26,16 +26,17 @@ export default class ImageGallery extends Component {
             : null;
 
         return (
-            <div className="image-gallery">
+            <section className="image-gallery">
                 {this.props.images.map((image, i) =>
-                    <img className="image-gallery-thumbnail"
-                         src={image.thumbnail}
-                         key={i}
-                         onClick={() => this.openLightbox(i)}
-                         alt={image.thumbAlt} />
+                    <button onClick={() => this.openLightbox(i)} key={i}>
+                        <img className="image-gallery-thumbnail"
+                             src={image.thumbnail}
+                             alt={image.thumbAlt}
+                         />
+                    </button>
                 )}
                 {lightbox}
-            </div>
+            </section>
         );
     }
 }
