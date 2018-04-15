@@ -34,41 +34,46 @@ export default class NavigationMenu extends Component {
                 </div>
                 <nav role="navigation">
                     <ul className="navigation-links" ref={c => this.navLinksEl = c}>
-                        <li>
+                        <li className="link-preceding-new-section">
                             <NavLink to="/">home</NavLink>
                         </li>
-                        
-                        <br />
 
                         <li>
                             play
                         </li>
-                        <li className="nested-link">
-                            <NavLink activeClassName="nav-link-active" to="/play/homage-to-barragan">homage to barrágan</NavLink>
+                        <li className="link-preceding-new-section">
+                            <ul className="nested-link-list">
+                                <li className="nested-link">
+                                    <NavLink activeClassName="nav-link-active" to="/play/homage-to-barragan">homage to barrágan</NavLink>
+                                </li>
+                                <li className="nested-link">
+                                    <NavLink activeClassName="nav-link-active" to="/play/autobiography-1">autobiography 1</NavLink>
+                                </li>
+                                <li className="nested-link">
+                                    <NavLink activeClassName="nav-link-active" to="/play/orthofloat">orthofloat</NavLink>
+                                </li>
+                                <li className="nested-link">
+                                    <NavLink activeClassName="nav-link-active" to="/play/trendtrend">trendtrend</NavLink>
+                                </li>
+                            </ul>
                         </li>
-                        <li className="nested-link">
-                            <NavLink activeClassName="nav-link-active" to="/play/autobiography-1">autobiography 1</NavLink>
-                        </li>
-                        <li className="nested-link">
-                            <NavLink activeClassName="nav-link-active" to="/play/orthofloat">orthofloat</NavLink>
-                        </li>
-                        <li className="nested-link">
-                            <NavLink activeClassName="nav-link-active" to="/play/trendtrend">trendtrend</NavLink>
-                        </li>
-                        <li>
-                            <NavLink activeClassName="nav-link-active" to="/links-contact">links & contact</NavLink>
-                        </li>
-
-                        <br />
 
                         <li>
                             work
                         </li>
-                        <li className="nested-link">
-                            <NavLink activeClassName="nav-link-active" to="/work/credit-karma">credit karma</NavLink>
+                        <li className="link-preceding-new-section">
+                            <ul className="nested-link-list">
+                                <li className="nested-link">
+                                    <NavLink activeClassName="nav-link-active" to="/work/credit-karma">Credit Karma</NavLink>
+                                </li>
+                                <li className="nested-link">
+                                    <NavLink activeClassName="nav-link-active" to="/work/granicus">Granicus</NavLink>
+                                </li>
+                            </ul>
                         </li>
-                        <li className="nested-link">
-                            <NavLink activeClassName="nav-link-active" to="/work/granicus">granicus</NavLink>
+
+                        <li>
+                            <NavLink activeClassName="nav-link-active" to="/links-contact">links & contact</NavLink>
                         </li>
                     </ul>
                 </nav>

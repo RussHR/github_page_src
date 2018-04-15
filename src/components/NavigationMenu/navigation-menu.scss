@@ -42,13 +42,14 @@
         display: none;
         margin: ($base-unit * 2) 0 $base-unit;
         padding: 0 $base-unit;
-        list-style: none;
         font-size: 1.5rem;
-        transition: max-height 0.8s;
-
-        > ul {
-            margin: $base-unit 0;
-        }
+    }
+    .link-preceding-new-section {
+        margin-bottom: $base-unit * 2;
+    }
+    .nested-link-list {
+        list-style: square;
+        padding-left: $base-unit * 3;
     }
     .nested-link {
         padding-left: $base-unit * 1.5;
