@@ -27,11 +27,11 @@ export default class NavigationMenu extends Component {
                 <h1 className="navigation-my-name">
                     <Link to="/">russ rinzler</Link>
                 </h1>
-                <div className={navToggleClass} onClick={() => this.toggleMenu()}>
-                    <div className="hamburger-line" />
-                    <div className="hamburger-line" />
-                    <div className="hamburger-line" />
-                </div>
+                <button className={navToggleClass} onClick={() => this.toggleMenu()}>
+                    <span className="hamburger-line" />
+                    <span className="hamburger-line" />
+                    <span className="hamburger-line" />
+                </button>
                 <nav role="navigation">
                     <ul className="navigation-links" ref={c => this.navLinksEl = c}>
                         <li className="link-preceding-new-section">
