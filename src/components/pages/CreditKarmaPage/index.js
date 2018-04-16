@@ -63,19 +63,30 @@ export default function CreditKarmaPage() {
         <ContentLayout header="credit karma"
                        subheader="front end engineer, may 2015 - september 2016"
                        links={['https://www.creditkarma.com']}>
-            <p>
-                generally, I'm implementing user interfaces and the front end architecture of new microservices
-                that use <strong>React, Flux (Redux), and ECMAScript 6</strong>. sometimes, I collaborate with
-                designers, especially as we try to determine new design paradigms for our style guide.
-                lately, I've been very involved with analytics in terms of identifying data collection
-                points and using front end tracking (Amplitude) to analyze users' behavior. I've also represented
-                Credit Karma at local LGBT events, and as part of a focus group, we are figuring out how best to
-                engage with issues of diversity and inclusion within our industry.
-            </p>
+            <div>
+                at Credit Karma, I:
+                <ul>
+                    <li>
+                        implemented user interfaces and front end architecture of new microservices that use React, Redux, and ECMAScript 6, integrating them with a legacy PHP codebase
+                    </li>
+                    <li>
+                        created new pages for credit factors and history, allowing users to have greater insight into personal finances
+                    </li>
+                    <li>
+                        collaborated with designers to gain mutual insight in developing a new style guide for internal use
+                    </li>
+                    <li>
+                        identified data collection points with analysts to determine and implement user event tracking via Amplitude
+                    </li>
+                    <li>
+                        engaged in issues of diversity and inclusion, representing Credit Karma at LGBTQ events and using research materials to discuss actionables as employees
+                    </li>
+                    <li>
+                        refactored older JavaScript relying on jQuery and Backbone.js to improve page performance
+                    </li>
+                </ul>
+            </div>
             <ImageGallery images={images} />
-            <p>
-                more work is available upon request.
-            </p>
         </ContentLayout>
     );
 }

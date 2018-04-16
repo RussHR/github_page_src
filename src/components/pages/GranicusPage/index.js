@@ -21,7 +21,7 @@ export default function GranicusPage() {
                         and allowed webinar registration
                     </li>
                     <li>
-                        utilized Mozilla's pdf.js API to create a custom PDF document viewer for meeting
+                        utilized Mozilla’s pdf.js API to create a custom PDF document viewer for meeting
                         agendas and <strong>added PDF export functionality</strong> with wicked_pdf
                         (wkhtmltopdf) to allow governments to save and print board details and rosters
                     </li>
@@ -41,13 +41,10 @@ export default function GranicusPage() {
                 </ul>
             </div>
             <p>
-                and hey, here's a thing I worked on until the company got bought and moved to Denver.
+                here’s a video of Granicus’s Peak Agenda Management software, which I developed prototypes for.
             </p>
-            <VideoIFrame src="https://www.youtube.com/embed/cCutHLg4De8"
+            <VideoIFrame src="https://www.youtube.com/embed/iCBwsEyRXsA"
                          style={{ width:"100%", paddingBottom: `${(315/560) * 100}%` }} />
-            <p>
-                more work is available upon request.
-            </p>
         </ContentLayout>
     );
 }

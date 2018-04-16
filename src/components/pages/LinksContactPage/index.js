@@ -6,22 +6,27 @@ export default function LinksContactPage() {
     return (
         <ContentLayout header="Links & Contact">
             <p>
-                github: <a target="_blank" href="https://github.com/russhr">
+                GitHub: <a target="_blank" href="https://github.com/russhr">
                     https://github.com/russhr
                 </a>
             </p>
             <p>
-                linkedin: <a target="_blank" href="https://www.linkedin.com/in/russrinzler">
+                LinkedIn: <a target="_blank" href="https://www.linkedin.com/in/russrinzler">
                     https://www.linkedin.com/in/russrinzler
                 </a>
             </p>
             <p>
-                instagram: <a target="_blank" href="https://www.instagram.com/russ_rinzler">
+                Instagram: <a target="_blank" href="https://www.instagram.com/russ_rinzler">
                     https://www.instagram.com/russ_rinzler
                 </a>
             </p>
             <p>
-                todo: email contact form? (;ﾟ∇ﾟ)
+                Twitter: <a target="_blank" href="https://www.instagram.com/russ_rinzler">
+                    https://www.twitter.com/russ_rinzler
+                </a>
+            </p>
+            <p>
+                I might have an email form one day, but probably not! (;ﾟ∇ﾟ)
             </p>
         </ContentLayout>
     );

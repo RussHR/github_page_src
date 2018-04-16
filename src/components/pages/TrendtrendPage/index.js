@@ -6,12 +6,12 @@ import VideoIFrame from '../../VideoIFrame';
 export default function TrendtrendPage() {
     return (
         <ContentLayout header="trendtrend"
-                       subheader="resolved - october 2015"
-                       links={[ 'http://russrinzler.com/trendtrend', 'https://github.com/RussHR/trendtrend_source' ]}>
+                       subheader="completed - october 2015"
+                       links={[ 'https://github.com/RussHR/trendtrend_source' ]}>
             <p>
-                trendtrend leverages React and Flux (Redux) to use APIs from tumblr and Spotify, analyzing
-                tracks and animating images to the amplitude of the sound waves.
-                it works on <strong>desktop browsers only</strong>.
+                trendtrend leveraged React and Redux to use APIs from tumblr and Spotify, analyzing
+                tracks in order to animate images based on the amplitude of the sound waves.
+                unfortunately, it is no longer functioning, likely due to an expired token.
             </p>
             <p>
                 <strong>CAUTION:</strong> the video below contains <strong>loud sounds and moving images.</strong>

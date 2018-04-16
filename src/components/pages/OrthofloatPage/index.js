@@ -6,8 +6,13 @@ import VideoIFrame from '../../VideoIFrame';
 export default function OrthofloatPage() {
     return (
         <ContentLayout header="orthofloat"
-                       subheader="resolved - july 2016"
-                       links={[ 'http://russrinzler.com/orthofloat', 'https://github.com/RussHR/orthofloat_src' ]}>
+                       subheader="completed - july 2016"
+                       links={[
+                            'http://russrinzler.com/orthofloat',
+                            'https://github.com/RussHR/orthofloat_src',
+                            'https://www.npmjs.com/package/orthofloat'
+                        ]}
+        >
             <p>
                 orthofloat marks a foray into WebGL with three.js.
                 you can change the colors and rotate the camera.

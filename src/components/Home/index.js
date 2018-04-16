@@ -13,6 +13,9 @@ export default function Home() {
                 front end developer, artist, queer, multiracial. I put some things I make here; feel
                 free to poke around.
             </p>
+            <p>
+                and yes, I intentionally use lowercase letters.
+            </p>
         </article>
     );
 }

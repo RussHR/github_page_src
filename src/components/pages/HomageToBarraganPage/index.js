@@ -6,7 +6,7 @@ import VideoIFrame from '../../VideoIFrame';
 export default function HomageToBarraganPage() {
     return (
         <ContentLayout header="homage to Barrágan"
-                       subheader="resolved - january 2017"
+                       subheader="completed - january 2017"
                        links={[ 'http://russrinzler.com/homage-to-barragan', 'https://github.com/RussHR/homage-to-barragan-1-src' ]}>
             <p>
                 homage to barragán is simply that: an homage to late architect <a href="https://en.wikipedia.org/wiki/Luis_Barrag%C3%A1n" target="_blank">Luis Barragán</a>.
