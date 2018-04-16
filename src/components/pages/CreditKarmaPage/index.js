@@ -3,6 +3,8 @@ import React from 'react';
 import ContentLayout from '../../layout/ContentLayout';
 import ImageGallery from '../../ImageGallery';
 
+import { mapSpecsToImages } from '../../../helpers/image';
+
 const imageSpecs = [
     {
         name: 'ccu',
@@ -41,22 +43,7 @@ const imageSpecs = [
     }
 ];
 
-const images = imageSpecs.map(imageSpec => {
-    const initialSrc = require(`../../../images/credit-karma/${imageSpec.name}-${imageSpec.sizes[0]}.png`);
-
-    const srcset = imageSpec.sizes.slice(1).reduce((previousVal, currentVal) => {
-        const imgSrc = require(`../../../images/credit-karma/${imageSpec.name}-${currentVal}.png`);
-        return previousVal.concat(`, ${imgSrc} ${currentVal}w`);
-    }, `${initialSrc} ${imageSpec.sizes[0]}w`);
-
-    return {
-        src: initialSrc,
-        thumbnail: require(`../../../images/credit-karma/${imageSpec.name}-thumbnail.png`),
-        thumbAlt: `Thumbnail of ${imageSpec.alt}`,
-        alt: imageSpec.alt,
-        srcset: srcset
-    };
-});
+const images = mapSpecsToImages(imageSpecs, 'credit-karma');
 
 export default function CreditKarmaPage() {
     return (

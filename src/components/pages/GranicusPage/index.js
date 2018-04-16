@@ -6,8 +6,8 @@ import VideoIFrame from '../../VideoIFrame';
 export default function GranicusPage() {
     return (
         <ContentLayout header="granicus"
-                       subheader="front end developer, january 2014 - april 2015"
-                       links={['http://www.granicus.com']}>
+                       subheader="developer (front end), january 2014 - april 2015"
+                       links={[ 'http://www.granicus.com' ]}>
             <div>
                 at Granicus, I:
                 <ul>
