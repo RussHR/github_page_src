@@ -1,7 +1,40 @@
 import React from 'react';
 
 import ContentLayout from '../../layout/ContentLayout';
+import ImageGallery from '../../ImageGallery';
 import VideoIFrame from '../../VideoIFrame';
+
+import { mapSpecsToImages } from '../../../helpers/image';
+
+const imageSpecs = [
+    {
+        name: 'boards-and-commissions-application-form-pdf',
+        sizes: [ '640', '1700' ],
+        alt: 'boards-and-commissions-application-form-pdf'
+    },
+    {
+        name: 'boards-and-commissions-application-form-pdf-redacted',
+        sizes: [ '640', '1700' ],
+        alt: 'boards-and-commissions-application-form-pdf-redacted'
+    },
+    {
+        name: 'boards-and-commissions-board-details-pdf',
+        sizes: [ '640', '1700' ],
+        alt: 'boards-and-commissions-board-details-pdf'
+    },
+    {
+        name: 'boards-and-commissions-board-roster-pdf',
+        sizes: [ '640', '1700' ],
+        alt: 'boards-and-commissions-board-roster-pdf'
+    },
+    {
+        name: 'boards-and-commissions-ie-dashboard',
+        sizes: [ '640', '1359' ],
+        alt: 'boards-and-commissions-ie-dashboard'
+    }
+];
+
+const images = mapSpecsToImages(imageSpecs, 'granicus');
 
 export default function GranicusPage() {
     return (
@@ -40,11 +73,7 @@ export default function GranicusPage() {
                     </li>
                 </ul>
             </div>
-            <p>
-                here’s a video of Granicus’s Peak Agenda Management software, which I developed prototypes for.
-            </p>
-            <VideoIFrame src="https://www.youtube.com/embed/iCBwsEyRXsA"
-                         style={{ width:"100%", paddingBottom: `${(315/560) * 100}%` }} />
+            <ImageGallery images={images} />
         </ContentLayout>
     );
 }
