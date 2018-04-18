@@ -2,7 +2,6 @@ import React from 'react';
 
 import ContentLayout from '../../layout/ContentLayout';
 import ImageGallery from '../../ImageGallery';
-import VideoIFrame from '../../VideoIFrame';
 
 import { mapSpecsToImages } from '../../../helpers/image';
 
@@ -31,6 +30,76 @@ const imageSpecs = [
         name: 'boards-and-commissions-ie-dashboard',
         sizes: [ '640', '1359' ],
         alt: 'boards-and-commissions-ie-dashboard'
+    },
+    {
+        name: 'hippocrates-closed',
+        sizes: [ '640', '794' ],
+        alt: 'hippocrates-closed'
+    },
+    {
+        name: 'hippocrates-contact',
+        sizes: [ '640', '1010' ],
+        alt: 'hippocrates-contact'
+    },
+    {
+        name: 'hippocrates-help-article',
+        sizes: [ '640', '996' ],
+        alt: 'hippocrates-help-article'
+    },
+    {
+        name: 'hippocrates-landing-page',
+        sizes: [ '640', '1009' ],
+        alt: 'hippocrates-landing-page'
+    },
+    {
+        name: 'hippocrates-video',
+        sizes: [ '640', '988' ],
+        alt: 'hippocrates-video'
+    },
+    {
+        name: 'peak-add-custom-field-filled',
+        sizes: [ '640', '1362' ],
+        alt: 'peak-add-custom-field-filled'
+    },
+    {
+        name: 'peak-add-custom-field-finish',
+        sizes: [ '640', '1362' ],
+        alt: 'peak-add-custom-field-finish'
+    },
+    {
+        name: 'peak-add-custom-field-preview',
+        sizes: [ '640', '1362' ],
+        alt: 'peak-add-custom-field-preview'
+    },
+    {
+        name: 'peak-add-custom-field',
+        sizes: [ '640', '1362' ],
+        alt: 'peak-add-custom-field'
+    },
+    {
+        name: 'peak-agenda-comment',
+        sizes: [ '640', '1362' ],
+        alt: 'peak-agenda-comment'
+    },
+    {
+        name: 'peak-agenda-preview',
+        sizes: [ '640', '1362' ],
+        alt: 'peak-agenda-preview'
+    },
+    {
+        name: 'peak-create-agenda-item',
+        sizes: [ '640', '1362' ],
+        alt: 'peak-create-agenda-item'
+    },
+    {
+        name: 'peak-edit-comment',
+        sizes: [ '640', '845' ],
+        alt: 'peak-edit-comment'
+    },
+    {
+        name: 'peak-edit-comment-finish',
+        sizes: [ '640', '1362' ],
+        alt: 'peak-edit-comment-finish'
     }
 ];
 
