@@ -100,6 +100,41 @@ const imageSpecs = [
         name: 'peak-edit-comment-finish',
         sizes: [ '640', '1362' ],
         alt: 'peak-edit-comment-finish'
+    },
+    {
+        name: 'pharos-badges',
+        sizes: [ '640', '1208' ],
+        alt: 'pharos-badges'
+    },
+    {
+        name: 'pharos-buttons',
+        sizes: [ '640', '1208' ],
+        alt: 'pharos-buttons'
+    },
+    {
+        name: 'pharos-colors',
+        sizes: [ '640', '1201' ],
+        alt: 'pharos-colors'
+    },
+    {
+        name: 'pharos-form-elements',
+        sizes: [ '640', '1208' ],
+        alt: 'pharos-form-elements'
+    },
+    {
+        name: 'pharos-icons',
+        sizes: [ '640', '1215' ],
+        alt: 'pharos-icons'
+    },
+    {
+        name: 'pharos-landing',
+        sizes: [ '640', '1211' ],
+        alt: 'pharos-landing'
+    },
+    {
+        name: 'pharos-typography',
+        sizes: [ '640', '1209' ],
+        alt: 'pharos-typography'
     }
 ];
 
