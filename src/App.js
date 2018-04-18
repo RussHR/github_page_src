@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { HashRouter, Route, Switch, Redirect } from 'react-router-dom';
 
+import SlackPage from './components/pages/SlackPage';
 import CreditKarmaPage from './components/pages/CreditKarmaPage';
 import GranicusPage from './components/pages/GranicusPage';
 import Home from './components/Home';
@@ -32,6 +33,7 @@ export default class App extends Component {
                         <Route path="/play/orthofloat" component={OrthofloatPage} />
                         <Route path="/play/trendtrend" component={TrendtrendPage} />
 
+                        <Route path="/work/slack" component={SlackPage} />
                         <Route path="/work/credit-karma" component={CreditKarmaPage} />
                         <Route path="/work/granicus" component={GranicusPage} />
 

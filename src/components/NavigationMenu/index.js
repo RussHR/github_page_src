@@ -64,6 +64,9 @@ export default class NavigationMenu extends Component {
                         <li className="link-preceding-new-section">
                             <ul className="nested-link-list">
                                 <li className="nested-link">
+                                    <NavLink activeClassName="nav-link-active" to="/work/slack">Slack</NavLink>
+                                </li>
+                                <li className="nested-link">
                                     <NavLink activeClassName="nav-link-active" to="/work/credit-karma">Credit Karma</NavLink>
                                 </li>
                                 <li className="nested-link">
