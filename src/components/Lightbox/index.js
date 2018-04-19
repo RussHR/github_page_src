@@ -72,7 +72,7 @@ Lightbox.propTypes = {
     image: PropTypes.shape({
         alt: PropTypes.string.isRequired,
         src: PropTypes.string.isRequired,
-        srcset: PropTypes.string.isRequired
+        srcset: PropTypes.string
     }).isRequired,
     onClose: PropTypes.func.isRequired,
     upperLeftCaption: PropTypes.string.isRequired,

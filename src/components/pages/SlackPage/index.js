@@ -7,23 +7,50 @@ import { mapSpecsToImages } from '../../../helpers/image';
 
 const imageSpecs = [
     {
-        name: 'ccu',
-        sizes: [ '320', '500', '800', '880' ],
-        alt: 'Credit Card Utilization'
+        name: 'onboarding-2-start',
+        sizes: [ '434' ],
+        alt: 'onboarding-2-start',
+        extension: 'gif'
     },
     {
-        name: 'ccu-mobile',
-        sizes: [ '320', '494' ],
-        alt: 'Credit Card Utilization Mobile'
+        name: 'onboarding-2-load',
+        sizes: [ '434' ],
+        alt: 'onboarding-2-load',
+        extension: 'gif'
     },
     {
-        name: 'our-leaders',
-        sizes: [ '320', '500', '800', '1020' ],
-        alt: 'Our Leaders'
+        name: 'onboarding-2-change-task',
+        sizes: [ '434' ],
+        alt: 'onboarding-2-change-task',
+        extension: 'gif'
+    },
+    {
+        name: 'onboarding-2-replay',
+        sizes: [ '434' ],
+        alt: 'onboarding-2-replay',
+        extension: 'gif'
+    },
+    {
+        name: 'onboarding-2-close',
+        sizes: [ '434' ],
+        alt: 'onboarding-2-close',
+        extension: 'gif'
+    },
+    {
+        name: 'onboarding-2-complete',
+        sizes: [ '434' ],
+        alt: 'onboarding-2-complete',
+        extension: 'gif'
+    },
+    {
+        name: 'onboarding-2-skip-step',
+        sizes: [ '434' ],
+        alt: 'onboarding-2-skip-step',
+        extension: 'gif'
     }
 ];
 
-const images = mapSpecsToImages(imageSpecs, 'credit-karma');
+const images = mapSpecsToImages(imageSpecs, 'slack');
 
 export default function SlackPage() {
     return (

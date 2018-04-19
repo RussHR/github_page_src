@@ -5,19 +5,22 @@
  */
 export function mapSpecsToImages(imageSpecs, imagesSubdirectory) {
     return imageSpecs.map(imageSpec => {
-        const initialSrc = require(`../images/${imagesSubdirectory}/${imageSpec.name}-${imageSpec.sizes[0]}.png`);
+        const initialSrc = require(`../images/${imagesSubdirectory}/${imageSpec.name}-${imageSpec.sizes[0]}.${imageSpec.extension || 'png'}`);
 
-        const srcset = imageSpec.sizes.slice(1).reduce((previousVal, currentVal) => {
-            const imgSrc = require(`../images/${imagesSubdirectory}/${imageSpec.name}-${currentVal}.png`);
-            return previousVal.concat(`, ${imgSrc} ${currentVal}w`);
-        }, `${initialSrc} ${imageSpec.sizes[0]}w`);
+        let srcset;
+        if (imageSpec.sizes.length >= 2) {
+            srcset = imageSpec.sizes.slice(1).reduce((previousVal, currentVal) => {
+                const imgSrc = require(`../images/${imagesSubdirectory}/${imageSpec.name}-${currentVal}.png`);
+                return previousVal.concat(`, ${imgSrc} ${currentVal}w`);
+            }, `${initialSrc} ${imageSpec.sizes[0]}w`);
+        }
 
         return {
             src: initialSrc,
             thumbnail: require(`../images/${imagesSubdirectory}/${imageSpec.name}-thumbnail.png`),
             thumbAlt: `Thumbnail of ${imageSpec.alt}`,
             alt: imageSpec.alt,
-            srcset: srcset
+            srcset
         };
     });
 }
