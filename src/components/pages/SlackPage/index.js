@@ -7,45 +7,45 @@ import { mapSpecsToImages } from '../../../helpers/image';
 
 const imageSpecs = [
     {
-        name: 'onboarding-2-start',
+        name: 'onboarding-2-start-animated',
         sizes: [ '434' ],
-        alt: 'onboarding-2-start',
+        alt: 'onboarding-2-start-animated',
         extension: 'gif'
     },
     {
-        name: 'onboarding-2-load',
+        name: 'onboarding-2-load-animated',
         sizes: [ '434' ],
-        alt: 'onboarding-2-load',
+        alt: 'onboarding-2-load-animated',
         extension: 'gif'
     },
     {
-        name: 'onboarding-2-change-task',
+        name: 'onboarding-2-change-task-animated',
         sizes: [ '434' ],
-        alt: 'onboarding-2-change-task',
+        alt: 'onboarding-2-change-task-animated',
         extension: 'gif'
     },
     {
-        name: 'onboarding-2-replay',
+        name: 'onboarding-2-replay-animated',
         sizes: [ '434' ],
-        alt: 'onboarding-2-replay',
+        alt: 'onboarding-2-replay-animated',
         extension: 'gif'
     },
     {
-        name: 'onboarding-2-close',
+        name: 'onboarding-2-close-animated',
         sizes: [ '434' ],
-        alt: 'onboarding-2-close',
+        alt: 'onboarding-2-close-animated',
         extension: 'gif'
     },
     {
-        name: 'onboarding-2-complete',
+        name: 'onboarding-2-complete-animated',
         sizes: [ '434' ],
-        alt: 'onboarding-2-complete',
+        alt: 'onboarding-2-complete-animated',
         extension: 'gif'
     },
     {
-        name: 'onboarding-2-skip-step',
+        name: 'onboarding-2-skip-step-animated',
         sizes: [ '434' ],
-        alt: 'onboarding-2-skip-step',
+        alt: 'onboarding-2-skip-step-animated',
         extension: 'gif'
     },
     {
@@ -102,7 +102,42 @@ const imageSpecs = [
         name: 'email-workplace-confirmation',
         sizes: [ '599' ],
         alt: 'email-workplace-confirmation'
-    }
+    },
+    {
+        name: 'onboarding-2-channel-replay',
+        sizes: [ '640', '1264' ],
+        alt: 'onboarding-2-channel-replay'
+    },
+    {
+        name: 'onboarding-2-complete',
+        sizes: [ '640', '1276' ],
+        alt: 'onboarding-2-complete'
+    },
+    {
+        name: 'onboarding-2-create-channel',
+        sizes: [ '640', '1269' ],
+        alt: 'onboarding-2-create-channel'
+    },
+    {
+        name: 'onboarding-2-post-message',
+        sizes: [ '640', '1267' ],
+        alt: 'onboarding-2-post-message'
+    },
+    {
+        name: 'onboarding-2-start',
+        sizes: [ '640', '1287' ],
+        alt: 'onboarding-2-start'
+    },
+    {
+        name: 'onboarding-2-upload-document',
+        sizes: [ '640', '1272' ],
+        alt: 'onboarding-2-upload-document'
+    },
+    {
+        name: 'quick-promo-invite-nudge',
+        sizes: [ '640', '1258' ],
+        alt: 'quick-promo-invite-nudge'
+    },
 ];
 
 const images = mapSpecsToImages(imageSpecs, 'slack');
