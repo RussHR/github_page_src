@@ -7,6 +7,7 @@ import GranicusPage from './components/pages/GranicusPage';
 import Home from './components/Home';
 import MainLayout from './components/layout/MainLayout';
 
+import ColorInteractionsPage from './components/pages/ColorInteractionsPage';
 import HomageToBarraganPage from './components/pages/HomageToBarraganPage';
 import Autobiography1Page from './components/pages/Autobiography1Page';
 import OrthofloatPage from './components/pages/OrthofloatPage';
@@ -28,6 +29,7 @@ export default class App extends Component {
                     <Switch>
                         <Route exact path="/" component={Home} />
 
+                        <Route path="/play/color-interactions" component={ColorInteractionsPage} />
                         <Route path="/play/homage-to-barragan" component={HomageToBarraganPage} />
                         <Route path="/play/autobiography-1" component={Autobiography1Page} />
                         <Route path="/play/orthofloat" component={OrthofloatPage} />

@@ -159,13 +159,25 @@ export default function SlackPage() {
                 at Slack, I:
                 <ul>
                     <li>
-                        did something
+                        developed the modal for the onboarding overhaul for workspace creators, which increased the number of creators going through onboarding by 57%, workspaces creating channels by 24%, and workspaces sending messages by 10%
                     </li>
                     <li>
-                        did something else
+                        initiated email template updates and created new templates for email campaigns, which improved visual consistency and increased team creator activation by 0.5%, invites sent by team joiners by 10%, and Slack app downloads by joiners by 3.5%
                     </li>
                     <li>
-                        and some emails
+                        drive an effort to refactor the z-indexes across Slack’s codebase, which includes over 600 declarations, by researching different strategies and communicating them to the wider front end team
+                    </li>
+                    <li>
+                        organize the Lifecycle Front End Sync meetings
+                    </li>
+                    <li>
+                        currently co-lead technical modernization of Slack’s invite modal to rely on ES6/React/Redux
+                    </li>
+                    <li>
+                        contributed to localization and internationalization by reporting and fixing internal bugs, especially for Japanese, before international release
+                    </li>
+                    <li>
+                        developed a prototype for a script-agnostic emoji picker that allowed users to type in hiragana, katakana, kanji, or rōmaji (Japanese ”alphabets” and Chinese characters)
                     </li>
                 </ul>
             </section>
@@ -173,7 +185,7 @@ export default function SlackPage() {
             <section className="project-description">
                 <h3>Onboarding 2.0</h3>
                 <p>
-                Onboarding 2.0 was an overhaul of the client onboarding for workspace
+                Onboarding 2.0 is an overhaul of the client onboarding for workspace
                 creators. it walks the user through creating a channel, sending a
                 message, and uploading a document.
                 </p>

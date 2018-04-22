@@ -21,12 +21,12 @@ export default function LinksContactPage() {
                 </a>
             </p>
             <p>
-                Twitter: <a target="_blank" href="https://www.instagram.com/russ_rinzler">
+                Twitter: <a target="_blank" href="https://www.twitter.com/russ_rinzler">
                     https://www.twitter.com/russ_rinzler
                 </a>
             </p>
             <p>
-                I might have an email form one day, but probably not! (;ﾟ∇ﾟ)
+                (;ﾟ∇ﾟ)
             </p>
         </ContentLayout>
     );

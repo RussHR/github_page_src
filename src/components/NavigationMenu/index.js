@@ -44,6 +44,9 @@ export default class NavigationMenu extends Component {
                         <li className="link-preceding-new-section">
                             <ul className="nested-link-list">
                                 <li className="nested-link">
+                                    <NavLink activeClassName="nav-link-active" to="/play/color-interactions">color interactions</NavLink>
+                                </li>
+                                <li className="nested-link">
                                     <NavLink activeClassName="nav-link-active" to="/play/homage-to-barragan">homage to barrágan</NavLink>
                                 </li>
                                 <li className="nested-link">
