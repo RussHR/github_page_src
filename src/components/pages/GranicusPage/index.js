@@ -158,7 +158,6 @@ export default function GranicusPage() {
                        subheader="developer (front end), january 2014 - april 2015"
                        links={[ 'http://www.granicus.com' ]}>
             <section>
-                at Granicus, I:
                 <ul>
                     <li>
                         developed cloud-based <strong>responsive web apps</strong> that help

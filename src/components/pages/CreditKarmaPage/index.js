@@ -51,7 +51,6 @@ export default function CreditKarmaPage() {
                        subheader="front end engineer, may 2015 - september 2016"
                        links={['https://www.creditkarma.com']}>
             <section>
-                at Credit Karma, I:
                 <ul>
                     <li>
                         implemented user interfaces and front end architecture of <strong>new microservices that use React, Redux, and ECMAScript 6</strong>, integrating them with a legacy PHP codebase

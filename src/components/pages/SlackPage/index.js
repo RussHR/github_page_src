@@ -9,7 +9,7 @@ const onboarding2Specs = [
     {
         name: 'onboarding-2-load-animated',
         sizes: [ '434' ],
-        alt: 'the start of onboarding for team creators once it’s finished loading.',
+        alt: 'the start of onboarding for workspace creators once the client has loaded for the first time.',
         extension: 'gif'
     },
     {
@@ -27,13 +27,7 @@ const onboarding2Specs = [
     {
         name: 'onboarding-2-replay-animated',
         sizes: [ '434' ],
-        alt: 'the team creator replaying an animation for a task in onboarding. since the animations are GIFs, this was done by “tricking” the DOM into thinking the GIF was removed and added back in.',
-        extension: 'gif'
-    },
-    {
-        name: 'onboarding-2-close-animated',
-        sizes: [ '434' ],
-        alt: 'the team creator closing onboarding.',
+        alt: 'the team creator replaying an animation for a task in onboarding.',
         extension: 'gif'
     },
     {
@@ -46,6 +40,12 @@ const onboarding2Specs = [
         name: 'onboarding-2-complete-animated',
         sizes: [ '434' ],
         alt: 'the final page of onboarding appearing. onboarding is finished when all tasks are either skipped or completed.',
+        extension: 'gif'
+    },
+    {
+        name: 'onboarding-2-close-animated',
+        sizes: [ '434' ],
+        alt: 'the team creator closing onboarding.',
         extension: 'gif'
     },
     {
@@ -156,28 +156,52 @@ export default function SlackPage() {
                        subheader="front end software engineer, september 2016 - present"
                        links={['https://slack.com']}>
             <section>
-                at Slack, I:
                 <ul>
                     <li>
-                        developed the modal for the onboarding overhaul for workspace creators, which increased the number of creators going through onboarding by 57%, workspaces creating channels by 24%, and workspaces sending messages by 10%
+                        <strong>developed the modal window</strong> for the onboarding overhaul for workspace creators
+                        <ul>
+                            <li>
+                                57% increase in creators starting onboarding
+                            </li>
+                            <li>
+                                24% increase in workspaces creating channels
+                            </li>
+                            <li>
+                                10% increase in workspaces sending messages
+                            </li>
+                        </ul>
                     </li>
                     <li>
-                        initiated email template updates and created new templates for email campaigns, which improved visual consistency and increased team creator activation by 0.5%, invites sent by team joiners by 10%, and Slack app downloads by joiners by 3.5%
+                        <strong>created new templates</strong> for email campaigns welcoming new users
+                        <ul>
+                            <li>
+                                0.5% increase in workspace creator activation
+                            </li>
+                            <li>
+                                10% increase in invites sent by workspace joiners
+                            </li>
+                            <li>
+                                3.5% increase in Slack app downloads by joiners
+                            </li>
+                        </ul>
                     </li>
                     <li>
-                        drive an effort to refactor the z-indexes across Slack’s codebase, which includes over 600 declarations, by researching different strategies and communicating them to the wider front end team
+                        <strong>lead a cross-functional initiative</strong> to update email templates, improving visual consistency
                     </li>
                     <li>
-                        organize the Lifecycle Front End Sync meetings
+                        drive a team-wide effort to <strong>refactor the z-indexes</strong> across Slack’s codebase, which includes over 600 declarations
                     </li>
                     <li>
-                        currently co-lead technical modernization of Slack’s invite modal to rely on ES6/React/Redux
+                        organize biweekly meetings for front end engineers within the Lifecycle team
                     </li>
                     <li>
-                        contributed to localization and internationalization by reporting and fixing internal bugs, especially for Japanese, before international release
+                        co-lead technical modernization of Slack’s invite modal window to rely on <strong>ES6/React/Redux</strong>
                     </li>
                     <li>
-                        developed a prototype for a script-agnostic emoji picker that allowed users to type in hiragana, katakana, kanji, or rōmaji (Japanese ”alphabets” and Chinese characters)
+                        contributed to <strong>localization and internationalization</strong> by reporting and fixing internal bugs before German/French/Japanese releases
+                    </li>
+                    <li>
+                        developed a prototype for an <strong>emoji</strong> picker, allowing users to type in hiragana, katakana, kanji, or rōmaji (Japanese ”alphabets” and Chinese characters)
                     </li>
                 </ul>
             </section>
@@ -186,7 +210,7 @@ export default function SlackPage() {
                 <h3>Onboarding 2.0</h3>
                 <p>
                 Onboarding 2.0 is an overhaul of the client onboarding for workspace
-                creators. it walks the user through creating a channel, sending a
+                creators. Onboarding 2.0 walks the user through creating a channel, sending a
                 message, and uploading a document.
                 </p>
                 <ImageGallery images={onboarding2Images} />
@@ -195,7 +219,7 @@ export default function SlackPage() {
             <section className="project-description">
                 <h3>emails</h3>
                 <p>
-                I worked on emails. a lot.
+                    I worked on emails. a lot.
                 </p>
                 <ImageGallery images={emailImages} />
             </section>
