@@ -18,7 +18,7 @@ export function mapSpecsToImages(imageSpecs, imagesSubdirectory) {
         return {
             src: initialSrc,
             thumbnail: require(`../images/${imagesSubdirectory}/${imageSpec.name}-thumbnail.png`),
-            thumbAlt: `Thumbnail of ${imageSpec.alt}`,
+            thumbAlt: `Thumbnail: ${imageSpec.alt}`,
             alt: imageSpec.alt,
             srcset
         };

@@ -5,151 +5,163 @@ import ImageGallery from '../../ImageGallery';
 
 import { mapSpecsToImages } from '../../../helpers/image';
 
-const imageSpecs = [
-    {
-        name: 'boards-and-commissions-application-form-pdf',
-        sizes: [ '640', '1700' ],
-        alt: 'boards-and-commissions-application-form-pdf'
-    },
-    {
-        name: 'boards-and-commissions-application-form-pdf-redacted',
-        sizes: [ '640', '1700' ],
-        alt: 'boards-and-commissions-application-form-pdf-redacted'
-    },
-    {
-        name: 'boards-and-commissions-board-details-pdf',
-        sizes: [ '640', '1700' ],
-        alt: 'boards-and-commissions-board-details-pdf'
-    },
-    {
-        name: 'boards-and-commissions-board-roster-pdf',
-        sizes: [ '640', '1700' ],
-        alt: 'boards-and-commissions-board-roster-pdf'
-    },
-    {
-        name: 'boards-and-commissions-ie-dashboard',
-        sizes: [ '640', '1359' ],
-        alt: 'boards-and-commissions-ie-dashboard'
-    },
-    {
-        name: 'hippocrates-closed',
-        sizes: [ '640', '794' ],
-        alt: 'hippocrates-closed'
-    },
-    {
-        name: 'hippocrates-contact',
-        sizes: [ '640', '1010' ],
-        alt: 'hippocrates-contact'
-    },
-    {
-        name: 'hippocrates-help-article',
-        sizes: [ '640', '996' ],
-        alt: 'hippocrates-help-article'
-    },
-    {
-        name: 'hippocrates-landing-page',
-        sizes: [ '640', '1009' ],
-        alt: 'hippocrates-landing-page'
-    },
-    {
-        name: 'hippocrates-video',
-        sizes: [ '640', '988' ],
-        alt: 'hippocrates-video'
-    },
-    {
-        name: 'peak-add-custom-field-filled',
+const peakSpecs = [
+{
+        name: 'peak-create-agenda-item',
         sizes: [ '640', '1362' ],
-        alt: 'peak-add-custom-field-filled'
-    },
-    {
-        name: 'peak-add-custom-field-finish',
-        sizes: [ '640', '1362' ],
-        alt: 'peak-add-custom-field-finish'
-    },
-    {
-        name: 'peak-add-custom-field-preview',
-        sizes: [ '640', '1362' ],
-        alt: 'peak-add-custom-field-preview'
+        alt: 'Initial page for creating an agenda item for a governmental meeting.'
     },
     {
         name: 'peak-add-custom-field',
         sizes: [ '640', '1362' ],
-        alt: 'peak-add-custom-field'
+        alt: 'Edit mode for an agenda item for a governmental meeting.'
     },
     {
-        name: 'peak-agenda-comment',
+        name: 'peak-add-custom-field-preview',
         sizes: [ '640', '1362' ],
-        alt: 'peak-agenda-comment'
+        alt: 'Edit mode for an agenda item for a governmental meeting. This shows a preview of a new field to add.'
+    },
+    {
+        name: 'peak-add-custom-field-filled',
+        sizes: [ '640', '1362' ],
+        alt: 'Edit mode for an agenda item for a governmental meeting. This shows a preview of a new field to add with the field name and placeholder text filled in.'
+    },
+    {
+        name: 'peak-add-custom-field-finish',
+        sizes: [ '640', '1362' ],
+        alt: 'An agenda item with a newly added text field for an agenda item for a governmental meeting.'
     },
     {
         name: 'peak-agenda-preview',
         sizes: [ '640', '1362' ],
-        alt: 'peak-agenda-preview'
+        alt: 'A PDF viewer for reading agenda items and leaving comments.'
     },
     {
-        name: 'peak-create-agenda-item',
+        name: 'peak-agenda-comment',
         sizes: [ '640', '1362' ],
-        alt: 'peak-create-agenda-item'
+        alt: 'A PDF viewer for reading agenda items and leaving comments. A comment on the PDF is currently shown.'
     },
     {
         name: 'peak-edit-comment',
         sizes: [ '640', '845' ],
-        alt: 'peak-edit-comment'
+        alt: 'A PDF viewer for reading agenda items and leaving comments. A comment on the PDF is being edited.'
     },
     {
         name: 'peak-edit-comment-finish',
         sizes: [ '640', '1362' ],
-        alt: 'peak-edit-comment-finish'
+        alt: 'A PDF viewer for reading agenda items and leaving comments. A comment on the PDF has been newly edited.'
+    }
+];
+
+const hippocratesSpecs = [
+    {
+        name: 'hippocrates-closed',
+        sizes: [ '640', '794' ],
+        alt: 'A help modal in a closed state in the lower left corner on an example page.'
     },
     {
-        name: 'pharos-badges',
-        sizes: [ '640', '1208' ],
-        alt: 'pharos-badges'
+        name: 'hippocrates-landing-page',
+        sizes: [ '640', '1009' ],
+        alt: 'A help modal opened to the landing page. The content is contextual based on what web page the user is on.'
     },
     {
-        name: 'pharos-buttons',
-        sizes: [ '640', '1208' ],
-        alt: 'pharos-buttons'
+        name: 'hippocrates-contact',
+        sizes: [ '640', '1010' ],
+        alt: 'A help modal opened to the contact page.'
+    },
+    {
+        name: 'hippocrates-help-article',
+        sizes: [ '640', '996' ],
+        alt: 'A help modal opened to an article discussing upcoming changes for Granicus products.'
+    },
+    {
+        name: 'hippocrates-video',
+        sizes: [ '640', '988' ],
+        alt: 'A help modal opened to a video.'
+    }
+];
+
+const pharosSpecs = [
+    {
+        name: 'pharos-landing',
+        sizes: [ '640', '1211' ],
+        alt: 'Landing page for the pattern library.'
     },
     {
         name: 'pharos-colors',
         sizes: [ '640', '1201' ],
-        alt: 'pharos-colors'
-    },
-    {
-        name: 'pharos-form-elements',
-        sizes: [ '640', '1208' ],
-        alt: 'pharos-form-elements'
-    },
-    {
-        name: 'pharos-icons',
-        sizes: [ '640', '1215' ],
-        alt: 'pharos-icons'
-    },
-    {
-        name: 'pharos-landing',
-        sizes: [ '640', '1211' ],
-        alt: 'pharos-landing'
+        alt: 'Colors page of the pattern library.'
     },
     {
         name: 'pharos-typography',
         sizes: [ '640', '1209' ],
-        alt: 'pharos-typography'
+        alt: 'Typography page of the pattern library.'
+    },
+    {
+        name: 'pharos-buttons',
+        sizes: [ '640', '1208' ],
+        alt: 'Buttons page of the pattern library.'
+    },
+    {
+        name: 'pharos-icons',
+        sizes: [ '640', '1215' ],
+        alt: 'Icons page of the pattern library.'
+    },
+    {
+        name: 'pharos-badges',
+        sizes: [ '640', '1208' ],
+        alt: 'Badges page of the pattern library.'
+    },
+    {
+        name: 'pharos-form-elements',
+        sizes: [ '640', '1208' ],
+        alt: 'Page of the pattern library for form elements.'
     }
 ];
 
-const images = mapSpecsToImages(imageSpecs, 'granicus');
+const boardsSpecs = [
+    {
+        name: 'boards-and-commissions-ie-dashboard',
+        sizes: [ '640', '1359' ],
+        alt: 'A version of a dashboard for Internet Explorer 7 that gives an overview of the board and commission details for a municipality.'
+    },
+    {
+        name: 'boards-and-commissions-application-form-pdf',
+        sizes: [ '640', '1700' ],
+        alt: 'A dynamically generated PDF of an application form of a candidate for an example board or commission.'
+    },
+    {
+        name: 'boards-and-commissions-application-form-pdf-redacted',
+        sizes: [ '640', '1700' ],
+        alt: 'A dynamically generated PDF of an application form of a candidate for an example board or commission, but with redacted information. The “marker” is an SVG applied over the field.'
+    },
+    {
+        name: 'boards-and-commissions-board-details-pdf',
+        sizes: [ '640', '1700' ],
+        alt: 'A dynamically generated PDF of displaying the details of an example board or commission.'
+    },
+    {
+        name: 'boards-and-commissions-board-roster-pdf',
+        sizes: [ '640', '1700' ],
+        alt: 'A dynamically generated PDF of displaying the roster of an example board or commission.'
+    }
+];
+
+const peakImages = mapSpecsToImages(peakSpecs, 'granicus');
+const hippocratesImages = mapSpecsToImages(hippocratesSpecs, 'granicus');
+const pharosImages = mapSpecsToImages(pharosSpecs, 'granicus');
+const boardsImages = mapSpecsToImages(boardsSpecs, 'granicus');
 
 export default function GranicusPage() {
     return (
         <ContentLayout header="granicus"
                        subheader="developer (front end), january 2014 - april 2015"
                        links={[ 'http://www.granicus.com' ]}>
-            <div>
+            <section>
                 at Granicus, I:
                 <ul>
                     <li>
-                        developed cloud-based <strong>desktop and mobile web apps</strong> that help
+                        developed cloud-based <strong>responsive web apps</strong> that help
                         government jurisdictions manage boards/commissions and meeting agendas
                     </li>
                     <li>
@@ -176,8 +188,46 @@ export default function GranicusPage() {
                         of using Backbone.js as a client-side framework
                     </li>
                 </ul>
-            </div>
-            <ImageGallery images={images} />
+            </section>
+
+            <section className="project-description">
+                <h3>Peak Agenda Management</h3>
+                <p>
+                Peak Agenda Management software is a cloud-based application for drafting,
+                approving, and publishing agenda items for governmental meetings.
+                </p>
+                <ImageGallery images={peakImages} />
+            </section>
+
+            <section className="project-description">
+                <h3>Hippocrates</h3>
+                <p>
+                Hippocrates is a help modal system embedded into other Granicus applications.
+                It would populate its content contextually by oberserving the current URL.
+                </p>
+                <ImageGallery images={hippocratesImages} />
+            </section>
+
+            <section className="project-description">
+                <h3>Pharos</h3>
+                <p>
+                Pharos was a new pattern library to help Granicus products be consistent
+                and easy to maintain. It included “snippets” of HTML and Haml (a Ruby
+                templating language) for other developers to use.
+                </p>
+                <ImageGallery images={pharosImages} />
+            </section>
+
+            <section className="project-description">
+                <h3>Boards and Commissions</h3>
+                <p>
+                Boards and Commissions is an app for allowing local municipalities to manage
+                the details of their boards and commissions. It also offers integration
+                into their own sites via iframe to allow citizens to view current board
+                rosters and openings.
+                </p>
+                <ImageGallery images={boardsImages} />
+            </section>
         </ContentLayout>
     );
 }
