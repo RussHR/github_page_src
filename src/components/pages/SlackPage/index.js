@@ -89,7 +89,7 @@ const emailSpecs = [
     {
         name: 'email-finish-creation',
         sizes: [ '578' ],
-        alt: 'an email sent to users if they’ve started but haven’t finished creating a workspace.'
+        alt: 'an email sent to users who have started but haven’t finished creating a workspace.'
     },
     {
         name: 'email-set-password',
@@ -228,7 +228,7 @@ export default function SlackPage() {
                 <h3>Quick Promo (Invite Nudge)</h3>
                 <p>
                 Quick Promo was an engineer-driven project that showed users a
-                promotional message upon loading the client. It saw use as
+                promotional message upon loading the client. it saw use as
                 part of Invite Nudge, which showed users a contextual
                 message to invite more people to their workspace.
                 </p>
