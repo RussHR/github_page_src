@@ -9,47 +9,47 @@ const peakSpecs = [
 {
         name: 'peak-create-agenda-item',
         sizes: [ '640', '1362' ],
-        alt: 'Initial page for creating an agenda item for a governmental meeting.'
+        alt: 'initial page for creating an agenda item for a governmental meeting.'
     },
     {
         name: 'peak-add-custom-field',
         sizes: [ '640', '1362' ],
-        alt: 'Edit mode for an agenda item for a governmental meeting.'
+        alt: 'edit mode for an agenda item for a governmental meeting.'
     },
     {
         name: 'peak-add-custom-field-preview',
         sizes: [ '640', '1362' ],
-        alt: 'Edit mode for an agenda item for a governmental meeting. This shows a preview of a new field to add.'
+        alt: 'edit mode for an agenda item for a governmental meeting. This shows a preview of a new field to add.'
     },
     {
         name: 'peak-add-custom-field-filled',
         sizes: [ '640', '1362' ],
-        alt: 'Edit mode for an agenda item for a governmental meeting. This shows a preview of a new field to add with the field name and placeholder text filled in.'
+        alt: 'edit mode for an agenda item for a governmental meeting. This shows a preview of a new field to add with the field name and placeholder text filled in.'
     },
     {
         name: 'peak-add-custom-field-finish',
         sizes: [ '640', '1362' ],
-        alt: 'An agenda item with a newly added text field for an agenda item for a governmental meeting.'
+        alt: 'an agenda item with a newly added text field for an agenda item for a governmental meeting.'
     },
     {
         name: 'peak-agenda-preview',
         sizes: [ '640', '1362' ],
-        alt: 'A PDF viewer for reading agenda items and leaving comments.'
+        alt: 'a PDF viewer for reading agenda items and leaving comments.'
     },
     {
         name: 'peak-agenda-comment',
         sizes: [ '640', '1362' ],
-        alt: 'A PDF viewer for reading agenda items and leaving comments. A comment on the PDF is currently shown.'
+        alt: 'a PDF viewer for reading agenda items and leaving comments. A comment on the PDF is currently shown.'
     },
     {
         name: 'peak-edit-comment',
         sizes: [ '640', '845' ],
-        alt: 'A PDF viewer for reading agenda items and leaving comments. A comment on the PDF is being edited.'
+        alt: 'a PDF viewer for reading agenda items and leaving comments. A comment on the PDF is being edited.'
     },
     {
         name: 'peak-edit-comment-finish',
         sizes: [ '640', '1362' ],
-        alt: 'A PDF viewer for reading agenda items and leaving comments. A comment on the PDF has been newly edited.'
+        alt: 'a PDF viewer for reading agenda items and leaving comments. A comment on the PDF has been newly edited.'
     }
 ];
 
@@ -57,27 +57,27 @@ const hippocratesSpecs = [
     {
         name: 'hippocrates-closed',
         sizes: [ '640', '794' ],
-        alt: 'A help modal in a closed state in the lower left corner on an example page.'
+        alt: 'a help modal in a closed state in the lower left corner on an example page.'
     },
     {
         name: 'hippocrates-landing-page',
         sizes: [ '640', '1009' ],
-        alt: 'A help modal opened to the landing page. The content is contextual based on what web page the user is on.'
+        alt: 'a help modal opened to the landing page. The content is contextual based on what web page the user is on.'
     },
     {
         name: 'hippocrates-contact',
         sizes: [ '640', '1010' ],
-        alt: 'A help modal opened to the contact page.'
+        alt: 'a help modal opened to the contact page.'
     },
     {
         name: 'hippocrates-help-article',
         sizes: [ '640', '996' ],
-        alt: 'A help modal opened to an article discussing upcoming changes for Granicus products.'
+        alt: 'a help modal opened to an article discussing upcoming changes for Granicus products.'
     },
     {
         name: 'hippocrates-video',
         sizes: [ '640', '988' ],
-        alt: 'A help modal opened to a video.'
+        alt: 'a help modal opened to a video.'
     }
 ];
 
@@ -85,37 +85,37 @@ const pharosSpecs = [
     {
         name: 'pharos-landing',
         sizes: [ '640', '1211' ],
-        alt: 'Landing page for the pattern library.'
+        alt: 'landing page for the pattern library.'
     },
     {
         name: 'pharos-colors',
         sizes: [ '640', '1201' ],
-        alt: 'Colors page of the pattern library.'
+        alt: 'colors page of the pattern library.'
     },
     {
         name: 'pharos-typography',
         sizes: [ '640', '1209' ],
-        alt: 'Typography page of the pattern library.'
+        alt: 'typography page of the pattern library.'
     },
     {
         name: 'pharos-buttons',
         sizes: [ '640', '1208' ],
-        alt: 'Buttons page of the pattern library.'
+        alt: 'buttons page of the pattern library.'
     },
     {
         name: 'pharos-icons',
         sizes: [ '640', '1215' ],
-        alt: 'Icons page of the pattern library.'
+        alt: 'icons page of the pattern library.'
     },
     {
         name: 'pharos-badges',
         sizes: [ '640', '1208' ],
-        alt: 'Badges page of the pattern library.'
+        alt: 'badges page of the pattern library.'
     },
     {
         name: 'pharos-form-elements',
         sizes: [ '640', '1208' ],
-        alt: 'Page of the pattern library for form elements.'
+        alt: 'page of the pattern library for form elements.'
     }
 ];
 
@@ -123,27 +123,27 @@ const boardsSpecs = [
     {
         name: 'boards-and-commissions-ie-dashboard',
         sizes: [ '640', '1359' ],
-        alt: 'A version of a dashboard for Internet Explorer 7 that gives an overview of the board and commission details for a municipality.'
+        alt: 'a version of a dashboard for Internet Explorer 7 that gives an overview of the board and commission details for a municipality.'
     },
     {
         name: 'boards-and-commissions-application-form-pdf',
         sizes: [ '640', '1700' ],
-        alt: 'A dynamically generated PDF of an application form of a candidate for an example board or commission.'
+        alt: 'a dynamically generated PDF of an application form of a candidate for an example board or commission.'
     },
     {
         name: 'boards-and-commissions-application-form-pdf-redacted',
         sizes: [ '640', '1700' ],
-        alt: 'A dynamically generated PDF of an application form of a candidate for an example board or commission, but with redacted information. The “marker” is an SVG applied over the field.'
+        alt: 'a dynamically generated PDF of an application form of a candidate for an example board or commission, but with redacted information. The “marker” is an SVG applied over the field.'
     },
     {
         name: 'boards-and-commissions-board-details-pdf',
         sizes: [ '640', '1700' ],
-        alt: 'A dynamically generated PDF of displaying the details of an example board or commission.'
+        alt: 'a dynamically generated PDF of displaying the details of an example board or commission.'
     },
     {
         name: 'boards-and-commissions-board-roster-pdf',
         sizes: [ '640', '1700' ],
-        alt: 'A dynamically generated PDF of displaying the roster of an example board or commission.'
+        alt: 'a dynamically generated PDF of displaying the roster of an example board or commission.'
     }
 ];
 
@@ -203,7 +203,7 @@ export default function GranicusPage() {
                 <h3>Hippocrates</h3>
                 <p>
                 Hippocrates is a help modal system embedded into other Granicus applications.
-                It would populate its content contextually by oberserving the current URL.
+                it would populate its content contextually by oberserving the current URL.
                 </p>
                 <ImageGallery images={hippocratesImages} />
             </section>
@@ -212,7 +212,7 @@ export default function GranicusPage() {
                 <h3>Pharos</h3>
                 <p>
                 Pharos was a new pattern library to help Granicus products be consistent
-                and easy to maintain. It included “snippets” of HTML and Haml (a Ruby
+                and easy to maintain. it included “snippets” of HTML and Haml (a Ruby
                 templating language) for other developers to use.
                 </p>
                 <ImageGallery images={pharosImages} />

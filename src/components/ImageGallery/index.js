@@ -78,7 +78,7 @@ export default class ImageGallery extends Component {
                 <Lightbox
                     image={images[currentImageIndex]}
                     onClose={() => this.closeLightbox()}
-                    upperLeftCaption={`Image ${currentImageIndex + 1} of ${images.length}`}
+                    upperLeftCaption={`image ${currentImageIndex + 1} of ${images.length}`}
                     lowerCaption={get(images, 'currentImageIndex.alt', 'No caption found.')}
                     onClickPrevImage={this.showPrevImage}
                     onClickNextImage={this.showNextImage}

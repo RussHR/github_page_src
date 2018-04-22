@@ -9,37 +9,37 @@ const imageSpecs = [
     {
         name: 'coverage',
         sizes: [ '320', '500', '800', '1024' ],
-        alt: 'Selecting the level of coverage in an auto insurance tool with a desktop browser.'
+        alt: 'selecting the level of coverage in an auto insurance tool with a desktop browser.'
     },
     {
         name: 'coverage-mobile',
         sizes: [ '320', '400' ],
-        alt: 'Selecting the level of coverage in an auto insurance tool with a mobile browser.'
+        alt: 'selecting the level of coverage in an auto insurance tool with a mobile browser.'
     },
     {
         name: 'coverage-details',
         sizes: [ '320', '500', '800', '1024' ],
-        alt: 'Minimum coverage details for a plan in an auto insurance tool.'
+        alt: 'minimum coverage details for a plan in an auto insurance tool.'
     },
     {
         name: 'ccu',
         sizes: [ '320', '500', '800', '880' ],
-        alt: 'A desktop page explaining a user’s credit card utilization and how it relates to a credit score.'
+        alt: 'a desktop page explaining a user’s credit card utilization and how it relates to a credit score.'
     },
     {
         name: 'ccu-mobile',
         sizes: [ '320', '494' ],
-        alt: 'A mobile page explaining a user’s credit card utilization and how it relates to a credit score.'
+        alt: 'a mobile page explaining a user’s credit card utilization and how it relates to a credit score.'
     },
     {
         name: 'our-leaders',
         sizes: [ '320', '500', '800', '1020' ],
-        alt: 'The desktop version of an interactive gallery of the executives at Credit Karma.'
+        alt: 'the desktop version of an interactive gallery of the executives at Credit Karma.'
     },
     {
         name: 'our-leaders-mobile',
         sizes: [ '320', '500', '758' ],
-        alt: 'The mobile version of an interactive gallery of the executives at Credit Karma.'
+        alt: 'the mobile version of an interactive gallery of the executives at Credit Karma.'
     }
 ];
 
@@ -50,7 +50,7 @@ export default function CreditKarmaPage() {
         <ContentLayout header="credit karma"
                        subheader="front end engineer, may 2015 - september 2016"
                        links={['https://www.creditkarma.com']}>
-            <div>
+            <section>
                 at Credit Karma, I:
                 <ul>
                     <li>
@@ -72,7 +72,7 @@ export default function CreditKarmaPage() {
                         refactored older JavaScript relying on jQuery and Backbone.js to <strong>improve page performance</strong>
                     </li>
                 </ul>
-            </div>
+            </section>
             <ImageGallery images={images} />
         </ContentLayout>
     );
