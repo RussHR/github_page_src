@@ -189,7 +189,7 @@ export default function SlackPage() {
                         <strong>lead a cross-functional initiative</strong> to update email templates, improving visual consistency
                     </li>
                     <li>
-                        drive a team-wide effort to <strong>refactor the z-indexes</strong> across Slack’s codebase, which includes over 600 declarations
+                        spearhead a team-wide effort to <strong>refactor the z-indexes</strong> across Slack’s codebase, which includes over 600 declarations
                     </li>
                     <li>
                         organize biweekly meetings for front end engineers within the Lifecycle team
