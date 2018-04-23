@@ -160,11 +160,11 @@ export default function GranicusPage() {
             <section>
                 <ul>
                     <li>
-                        developed cloud-based <strong>responsive web apps</strong> that help
+                        developed cloud-based, <strong>responsive web apps</strong> that help
                         government jurisdictions manage boards/commissions and meeting agendas
                     </li>
                     <li>
-                        made a <strong>user assistance modal system</strong> for new and existing products using
+                        made a <strong>user assistance modal window system</strong> for new and existing products using
                         Ruby on Rails that surfaced contextual help articles and videos from the Help Center
                         and allowed webinar registration
                     </li>
@@ -175,7 +175,7 @@ export default function GranicusPage() {
                     </li>
                     <li>
                         created a <strong>UI pattern library</strong> with Grunt to standardize the look and feel of
-                        products, ensure <strong>ADA compliance</strong>, and assist other developers
+                        products, ensure <strong>ADA (Americans with Disabilities Act) compliance</strong>, and assist other developers
                         by providing assets that can be "dropped" into their projects
                     </li>
                     <li>

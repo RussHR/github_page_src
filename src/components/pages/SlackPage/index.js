@@ -186,7 +186,7 @@ export default function SlackPage() {
                         </ul>
                     </li>
                     <li>
-                        <strong>lead a cross-functional initiative</strong> to update email templates, improving visual consistency
+                        <strong>led a cross-functional initiative</strong> to update email templates, improving visual consistency
                     </li>
                     <li>
                         spearhead a team-wide effort to <strong>refactor the z-indexes</strong> across Slack’s codebase, which includes over 600 declarations

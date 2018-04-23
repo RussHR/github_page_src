@@ -47,7 +47,7 @@ export default class Lightbox extends PureComponent {
                         className="lightbox-change-image lightbox-prev-image"
                         onClick={onClickPrevImage}
                     >
-                        &#9664;
+                        &#9668;
                     </button>
                     <figure className="lightbox-photo-wrapper">
                         <Loading style={{ color: 'white' }} />
@@ -57,7 +57,7 @@ export default class Lightbox extends PureComponent {
                         className="lightbox-change-image lightbox-next-image"
                         onClick={onClickNextImage}
                     >
-                        &#9654;
+                        &#9658;
                     </button>
                 </section>
                 <footer className="lightbox-footer">
