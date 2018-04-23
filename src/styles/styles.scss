@@ -11,6 +11,9 @@
         opacity: 0;
     }
 }
+.no-scroll {
+    overflow: hidden;
+}
 h1 {
     font-family: "Macula Solid", "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
     font-weight: 400;

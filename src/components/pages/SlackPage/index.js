@@ -156,9 +156,10 @@ export default function SlackPage() {
                        subheader="front end software engineer, september 2016 - present"
                        links={['https://slack.com']}>
             <section>
+                Currently on the Lifecycle: New User Experience Team (previously Growth).
                 <ul>
                     <li>
-                        <strong>developed the modal window</strong> for the onboarding overhaul for workspace creators
+                        <strong>developed the modal window</strong> for the new workspace creator onboarding
                         <ul>
                             <li>
                                 57% increase in creators starting onboarding

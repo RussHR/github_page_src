@@ -13,10 +13,12 @@ export default class Lightbox extends PureComponent {
 
     componentDidMount() {
         window.addEventListener('keydown', this.handleKeyboardEvent);
+        document.body.className = 'no-scroll';
     }
 
     componentWillUnmount() {
         window.removeEventListener('keydown', this.handleKeyboardEvent);
+        document.body.className = '';
     }
 
     handleKeyboardEvent({ keyCode }) {
